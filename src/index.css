@@ -1,13 +1,117 @@
-body {
+/* Reset CSS */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a; /* Bleu nuit */
+  color: #f8fafc; /* Blanc cassé */
+  line-height: 1.6;
+}
+
+.header-info {
+  text-align: center; /* Pour centrer le contenu */
+}
+
+.header-info h1 {
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  color: #38bdf8; /* Bleu */
+  margin-bottom: 0.3rem;
+}
+
+.header-info h2 {
+  font-size: 1.2rem;
+  color: #38bdf8; /* Bleu */
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Card style */
+.card {
+  background-color: #1e293b;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  height: 200px; /* Essaie avec une valeur un peu plus grande */
+}
+
+/* Button style */
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #38bdf8; /* Bleu clair pour le fond */
+  color: #f8fafc; /* Blanc cassé pour le texte */
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0ea5e9; /* Un bleu un peu plus foncé quand tu passes la souris */
+}
+
+/* Responsive Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.socials-header {
+  display: flex;
+  justify-content: center; /* Pour centrer les icônes */
+  margin-bottom: 2rem; /* Pour un peu d'espace avant les projets */
+}
+
+.socials-header a {
+  font-size: 1.5rem; /* Pour qu'ils soient plus grands */
+  margin: 0 1rem; /* Pour l'espace autour des icônes */
+  color: #38bdf8; /* Bleu */
+  text-decoration: none;
+}
+
+.socials-header a:hover {
+  color: #0ea5e9;
+  text-decoration: none;
+}
+
+.card h2.text-xl { /* Cibler spécifiquement le titre du projet dans la carte */
+  font-size: 1.5rem; /* Pour le rendre un peu plus grand */
+  font-weight: bold;
+  margin-top: 1rem; /* Un peu d'espace au-dessus du titre */
+  color: #38bdf8; /* Bleu */
 }
