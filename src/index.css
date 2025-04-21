@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Police de la présentation par défaut */
   background-color: #0f172a; /* Bleu nuit */
   color: #f8fafc; /* Blanc cassé */
   line-height: 1.6;
@@ -17,16 +17,29 @@ body {
 }
 
 .header-info h1 {
-  font-size: 2.5rem;
-  font-family: sans-serif;
+  font-size: 4.5rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Police de la présentation par défaut */
   color: #38bdf8; /* Bleu */
   margin-bottom: 0.3rem;
 }
 
 .header-info h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Police de la présentation par défaut */
   color: #38bdf8; /* Bleu */
   margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: 'InterVariable', sans-serif; /* Application de la police Inter à tous les h2 */
+  font-size: 36px; /* Taille de police de 36px pour les h2 */
+  /* Les autres styles spécifiques aux h2 que tu avais demandés peuvent être ajoutés ici si nécessaire */
+}
+
+p {
+  font-family: 'InterVariable', sans-serif; /* Application de la police Inter à tous les p */
+  font-size: 20px; /* Taille de police de 20px pour les p */
+  /* Les autres styles spécifiques aux p que tu avais demandés peuvent être ajoutés ici si nécessaire */
 }
 
 a {
@@ -40,9 +53,9 @@ a:hover {
 
 /* Container */
 .container {
-  max-width: 1200px;
+  max-width: 1400px; /* Essaie une valeur plus grande */
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 3rem; /* Ajoute un peu de padding horizontal */
 }
 
 /* Card style */
@@ -51,7 +64,7 @@ a:hover {
   border-radius: 1rem;
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0 8px 16px rgba(0,0,0,0.3);
 }
 
 .card:hover {
@@ -78,10 +91,203 @@ a:hover {
   cursor: pointer;
   margin-top: 1rem;
   transition: background-color 0.3s ease;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Police du bouton reste la même */
 }
 
 .button:hover {
   background-color: #0ea5e9; /* Un bleu un peu plus foncé quand tu passes la souris */
+}
+
+/* Style pour la section "À propos" */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation-container {
+  display: flex; /* Pour aligner le titre et l'image sur la même ligne */
+  justify-content: space-between; /* Pour pousser l'image à droite */
+  align-items: flex-start; /* Pour aligner le haut du titre avec le haut de l'image */
+  margin-bottom: 2rem; /* Ajoute un peu d'espace en dessous */
+  padding: 0 3rem; /* Pour aligner horizontalement avec le conteneur principal */
+}
+
+.presentation-image {
+  width: 200px; /* Ajuste la largeur de l'image selon tes besoins */
+  height: auto; /* Garde les proportions de l'image */
+}
+
+.presentation-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem; /* Optionnel : pour arrondir les bords de l'image */
+}
+
+.parcours-pro-section {
+  padding: 2rem 3rem;
+  color: #f8fafc;
+  text-align: center;
+}
+
+.parcours-pro-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.timeline-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 2rem;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.timeline-column {
+  flex: 1;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.timeline-column h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #38bdf8;
+  text-align: center;
+  width: 100%;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.timeline-item.last { 
+  margin-bottom: 0;
+}
+
+.timeline-point {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #38bdf8;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item .timeline-date {
+  font-size: 0.9rem;
+  color: #a1a1aa;
+  margin-top: 0.2rem;
+  margin-bottom: 0;
+}
+
+.timeline-item .timeline-content {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+/* Style pour la ligne continue (centrée sur les points) */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 4rem;
+  bottom: 4rem;
+  left: calc(78px / 2 - 1px); /* Centre la ligne par rapport aux points */
+  width: 2px;
+  background-color: #38bdf8;
+  z-index: 0;
+}
+
+/* Style pour la deuxième ligne dans la colonne formations */
+.timeline-column.formations::before {
+  content: '';
+  position: absolute;
+  top: 4rem;
+  bottom: 4rem;
+  left: calc(14px / 2 - 1px); /* Centre la ligne par rapport aux points */
+  width: 2px;
+  background-color: #38bdf8;
+  z-index: 0;
+}
+
+/* Styles spécifiques pour la colonne formations */
+.timeline-column.formations {
+  align-items: flex-start;
+  position: relative; /* Nécessaire pour positionner la barre à l'intérieur */
+}
+
+.timeline-column.formations .timeline-item {
+  padding-left: 2.5rem;
+  padding-right: 0;
+  text-align: left;
+}
+
+.timeline-column.formations .timeline-point {
+  left: 0;
+  right: auto;
+}
+
+.timeline-column.formations .timeline-date {
+  order: 2;
+  margin-top: 0.2rem;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.timeline-column.formations .timeline-content {
+  order: 1;
+  margin-bottom: 0.2rem;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.about-text .button {
+  margin-top: 1.5rem;
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about-image {
+    margin-top: 2rem;
+  }
+
+  .about-text {
+    align-items: flex-start;
+  }
+
+  .about-text .button {
+    align-self: flex-start;
+  }
 }
 
 /* Responsive Grid */
@@ -93,15 +299,16 @@ a:hover {
 
 .socials-header {
   display: flex;
-  justify-content: center; /* Pour centrer les icônes */
-  margin-bottom: 2rem; /* Pour un peu d'espace avant les projets */
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .socials-header a {
-  font-size: 1.5rem; /* Pour qu'ils soient plus grands */
-  margin: 0 1rem; /* Pour l'espace autour des icônes */
-  color: #38bdf8; /* Bleu */
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  color: #38bdf8;
   text-decoration: none;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Police des icônes reste la même */
 }
 
 .socials-header a:hover {
@@ -109,9 +316,119 @@ a:hover {
   text-decoration: none;
 }
 
-.card h2.text-xl { /* Cibler spécifiquement le titre du projet dans la carte */
-  font-size: 1.5rem; /* Pour le rendre un peu plus grand */
+.card h2.text-xl { /* Titre du projet dans la carte */
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 1rem; /* Un peu d'espace au-dessus du titre */
-  color: #38bdf8; /* Bleu */
+  margin-top: 1rem;
+  color: #38bdf8;
+  font-family: 'InterVariable', sans-serif; /* Application de la police Inter */
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skill-group h3 {
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Police des titres de compétences reste la même */
+}
+
+.skill-list {
+  background-color: #1e293b;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.skill-item-large {
+  background-color: #27374d;
+  color: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: auto;
+  min-width: 120px;
+  text-align: center;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Police des éléments de compétences reste la même */
+}
+
+.skill-icon-large {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.mon-bouton-style {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #58a6ff;
+  color: #0f172a;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Police de l'autre bouton reste la même */
+}
+
+.mon-bouton-style:hover {
+  background-color: #3d8bf7;
+}
+
+.animated-text h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing-fluid 7s ease-out forwards;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Police du titre animé reste la même */
+}
+
+.animated-text h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  width: 0;
+  animation: typing-fluid 9s ease-out forwards 0.7s;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Police du sous-titre animé reste la même */
+}
+
+/* Animation de frappe fluide */
+@keyframes typing-fluid {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+#veille h2 {
+  font-family: 'InterVariable', sans-serif; /* Application de la police Inter */
+}
+
+#veille p {
+  font-family: 'InterVariable', sans-serif; /* Application de la police Inter */
+}
+
+#about h2 {
+  font-family: 'InterVariable', sans-serif; /* Application de la police Inter */
+}
+
+#about p {
+  font-family: 'InterVariable', sans-serif; /* Application de la police Inter */
+}
+
+.card p {
+  font-family: 'InterVariable', sans-serif; /* Application de la police Inter */
+}
+
+#contact p {
+  font-family: 'InterVariable', sans-serif; /* Application de la police Inter */
 }
