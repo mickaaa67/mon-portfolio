@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaCode, FaBriefcase, FaEnvelope, FaMicrochip, FaGavel } from "react-icons/fa";
-
+import { useState } from 'react'; // Importez useState
 
 const projects = [
   {
     title: "Site e-commerce pour l'ONF",
     description:
-      "Développement d'un site de e-commerce pour la vente d'équipements de protection individuelle.",
+      "Site de vente de vêtements et d'équipements de protection individuelle.",
     technologies: ["PHP", "MySQL", "Bootstrap"],
     year: "2023",
     image: "/images/onf.png",
@@ -16,15 +16,68 @@ const projects = [
   {
     title: "Optimisation back-end chez Jung Logistique",
     description:
-      "Amélioration du traitement des données pour une réduction de 40% du temps d'exécution.",
+      "Extranet de l'entreprise.",
     technologies: ["C#", "JavaScript"],
-    year: "2023",
+    year: "2023-2024",
     image: "/images/jung.png",
     link: "/projects/jung",
+  },
+  {
+    title: "Ecolotri",
+    description:
+      "Site de gestion de déchets",
+    technologies: ["Html", "Css", "Php", "MySQL"],
+    year: "2023",
+    image: "/images/jung.png",
+    link: "/projects/ecolotri",
+  },
+  {
+    title: "ServiceNow",
+    description:
+      "Site de gestion de déchets",
+    technologies: ["HTML", "CSS", "PHP", "MySQL"],
+    year: "2023",
+    image: "/images/jung.png",
+    link: "/projects/servicenow",
+  },
+  {
+    title: "BricoBrac",
+    description:
+      "Site vitrine de bricolage. Gestion utilisateurs (admin/clients). Modification articles. Système de commande.",
+    technologies: ["HTML", "CSS", "PHP", "MySQL", "Trello", "GitHub"],
+    year: "2024-2025",
+    image: "/images/bricobrac.png",
+    link: "/projects/bricobrac",
+  },
+  {
+    title: "FormaTech",
+    description:
+      "Application web gestion formations. Gestion utilisateurs, promotions, salles. Ajout/modification infos.",
+    technologies: ["HTML", "CSS", "PHP", "MySQL", "Trello", "GitHub"],
+    year: "2024-2025",
+    image: "/images/formatech.png",
+    link: "/projects/formatech",
   },
 ];
 
 export default function Portfolio() {
+  const [message, setMessage] = useState('');
+  const maxLength = 1500;
+
+  const handleMessageChange = (event) => {
+    if (event.target.value.length <= maxLength) {
+      setMessage(event.target.value);
+    }
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Ici, tu peux ajouter la logique pour envoyer le formulaire
+    console.log('Message envoyé:', message);
+    // Réinitialiser le formulaire après l'envoi (optionnel)
+    setMessage('');
+  };
+
   return (
     <div className="container">
       <div className="header-info animated-text">
@@ -38,14 +91,17 @@ export default function Portfolio() {
           <a href="https://linkedin.com/in/tonprofil" target="_blank" rel="noreferrer">
             <FaLinkedin />
           </a>
+          <a href="mailto:votre.email@example.com" className="email-icon"> {/* Ajoutez un lien mailto */}
+            <FaEnvelope />
+          </a>
         </div>
       </div>
-      
+
       <section id="about" className="section about-section">
         <div className="about-text">
-        <h2 class="text-4xl sm:text-6xl text-start font-bold pb-4">Présentation 👨🏻‍💻</h2>          
+        <h2 class="text-4xl sm:text-6xl text-start font-bold pb-4">Présentation 👨🏻‍💻</h2>
           <p>
-            Jeune développeur de 21 ans, passionné par le développement web,  Titulaire d'un BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers qui m'a permis de structuré mes compétences. Fort de plusieurs réalisations qui témoignent de ma motivation, je recherche activement un poste de développeur web en alternance pour un an, dans le cadre de ma préparation à la Licence professionnelle Développement Web Communication et Apprentissages.
+            Jeune développeur de 21 ans, passionné par le développement web, Titulaire d'un BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers qui m'a permis de structuré mes compétences. Fort de plusieurs réalisations qui témoignent de ma motivation, je recherche activement un poste de développeur web en alternance pour un an, dans le cadre de ma préparation à la Licence professionnelle Développement Web Communication et Apprentissages.
           </p>
             <a href="/Curriculum Vitae/cv_mickael_hoffer.pdf" target="_blank" rel="noopener noreferrer" className="button">
               Voir mon CV
@@ -74,12 +130,18 @@ export default function Portfolio() {
             <div className="timeline-item">
               <div className="timeline-point"></div>
               <div className="timeline-date">février 2023 - avril 2023</div>
-              <div className="timeline-content">Stage en Informatique à L'Office National des Forêts, Colmar (deuxième période)</div>
+              <div className="timeline-content">Stage en Informatique à L'Office National des Forêts, Colmar
+                <br />
+                (deuxième période)
+              </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-point"></div>
               <div className="timeline-date">mai 2022 - juillet 2022</div>
-              <div className="timeline-content">Stage en Informatique chez Daramic, Sélestat (première période)</div>
+              <div className="timeline-content">Stage en Informatique chez Daramic, Sélestat
+                <br />
+                (première période)
+              </div>
             </div>
           </div>
           <div className="timeline-line"></div>
@@ -113,7 +175,8 @@ export default function Portfolio() {
       </section>
       <br></br><br></br><br></br>
       <section id="skills" className="section">
-        <h2><FaCode /> Mes compétences</h2>
+        <h2> Mes compétences</h2>
+        <br />
         <div className="skills-container">
           <div className="skill-group">
             <h3>Front-end</h3>
@@ -207,7 +270,8 @@ export default function Portfolio() {
       </section>
       <br></br><br></br><br></br>
       <section id="projects" className="section">
-        <h2><FaBriefcase /> Mes projets</h2>
+        <h2>Mes projets</h2>
+        <br></br>
         <div className="grid">
           {projects.map((project, index) => (
             <div className="card" key={index}>
@@ -221,9 +285,49 @@ export default function Portfolio() {
           ))}
         </div>
       </section>
+      <br></br><br></br><br></br><br></br><br></br><br></br>
       <section id="contact" className="section">
-        <h2><FaEnvelope /> Contact</h2>
-        <p>Tu peux ajouter ici un moyen de te contacter !</p>
+        <h2>Contactez-moi ! ✉️</h2>
+        <p>N'hésitez pas à me contacter directement par email.</p>
+        <div className="contact-form">
+          <form action="#" method="POST" onSubmit={handleSubmit}> {/* Ajoutez onSubmit */}
+            <div className="form-group">
+              <label htmlFor="name">Nom *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div className="form-group">
+              <label htmlFor="subject">Objet *</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                value={message}
+                onChange={handleMessageChange}
+                maxLength={maxLength}
+              />
+              <p className="character-count">{message.length}/{maxLength}</p> {/* Ajoutez le compteur */}
+            </div>
+            <p className="required-field">* Champ obligatoire</p>
+            <div className="form-consent">
+              <input type="checkbox" id="consent" name="consent" required />
+              <label htmlFor="consent">En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour vous recontacter. Pour connaître et exercer vos droits, veuillez consulter la <a href="/politique-de-confidentialite" target="_blank" rel="noopener noreferrer">politique de confidentialité</a>.</label>
+            </div>
+            <button type="submit" className="button">Envoyer le message</button>
+          </form>
+        </div>
       </section>
     </div>
   );
