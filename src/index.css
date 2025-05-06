@@ -666,3 +666,138 @@ a:hover {
   margin-top: 30px;
   text-align: center;
 }
+
+.centered-content {
+  text-align: center; /* Centre le texte des éléments enfants par défaut */
+}
+
+.centered-image {
+  display: block; /* Empêche l'image de se comporter comme un élément en ligne */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered-section {
+  text-align: center;
+  padding: 20px; /* Ajoute un peu de marge autour du contenu de la section */
+}
+
+.centered-element {
+  display: flex;
+  justify-content: center; /* Centre les éléments enfants (comme la vidéo) */
+}
+
+/* Styles pour la couleur bleue des titres */
+.project-title,
+.section-title {
+  color: #007bff; /* Remplacez par la couleur bleue exacte de votre page d'accueil */
+}
+
+/* ... Tes autres styles ... */
+
+/* Ajustements pour la mise en page (si nécessaire) */
+.project-header {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments verticalement */
+  align-items: center; /* Centre horizontalement les éléments */
+  padding: 20px;
+}
+
+.title-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-button {
+  position: absolute;
+  left: 20px;
+  top: 20px; /* Ajustez la position verticale si nécessaire */
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+}
+
+.project-presentation,
+.site-architecture,
+.project-preview {
+  max-width: 800px; /* Limite la largeur pour une meilleure lisibilité */
+  margin: 20px auto; /* Centre la section et ajoute de la marge verticale */
+  padding: 20px;
+  text-align: left; /* Re-aligne le texte à gauche pour la lecture */
+}
+
+.project-presentation h2,
+.site-architecture h2,
+.project-preview h2 {
+  text-align: center; /* Centre les titres des sections */
+}
+
+.video-container {
+  margin-top: 20px;
+}
+
+.site-map-image {
+  max-width: 90%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.indent-list {
+  padding-left: 20px; /* Ajustez cette valeur pour contrôler la marge à gauche */
+  text-align: left; /* Réalignez le texte à gauche à l'intérieur de la liste */
+}
+
+.project-presentation ul {
+  list-style-type: disc; /* Assurez-vous que les puces sont affichées */
+  margin-left: 0; /* Supprime la marge par défaut du navigateur pour la liste */
+}
+
+.project-presentation li {
+  margin-bottom: 5px; /* Ajoutez un peu d'espace entre les éléments de la liste */
+}
+
+.project-logoONF {
+  max-width: 800px; /* Ajuste cette valeur selon tes besoins */
+  max-height: 800px; /* Ajuste cette valeur selon tes besoins */
+  width: auto;
+  height: auto;
+}
+
+.site-map-imageONF {
+  max-width: 1200px; /* Conserve la largeur maximale */
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -180px; /* Décaler à gauche en supprimant la marge gauche par défaut */
+  margin-right: auto; /* Permet à la marge droite de s'ajuster automatiquement */
+}
+
+.project-logoJung {
+  /* Les autres styles que tu as déjà pour le logo */
+  width: 700px; /* Agrandir la largeur à 300 pixels */
+  height: auto; /* La hauteur s'ajustera automatiquement pour conserver les proportions */
+}
+
+.project-imageJung{
+  /* Les autres styles que tu as déjà pour le logo */
+  width: 1400px; /* Agrandir la largeur à 300 pixels */
+  height: auto; /* La hauteur s'ajustera automatiquement pour conserver les proportions */
+}
+
+.subsection p {
+  text-align: left; /* Centre le texte horizontalement */
+  max-width: 820px; /* Empêche le texte de dépasser une certaine largeur */
+  margin-left: auto; /* Marge à gauche automatique pour le centrage */
+  margin-right: auto; /* Marge à droite automatique pour le centrage */
+  line-height: 1.6; /* Améliore la lisibilité en espaçant les lignes */
+}
+
+.indent-listHeineken {
+  padding-left: 630px; /* Ajustez cette valeur pour contrôler la marge à gauche */
+  text-align: left; /* Réalignez le texte à gauche à l'intérieur de la liste */
+  max-width: 1430px;
+}
+
+
