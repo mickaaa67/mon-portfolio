@@ -800,4 +800,13 @@ a:hover {
   max-width: 1430px;
 }
 
+/* Projet Ecolotri */
+
+.site-map-imageEcolotri {
+  max-width: 90%;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 

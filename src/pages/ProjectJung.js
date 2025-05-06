@@ -196,13 +196,13 @@ function ProjectJung() {
           <h3 className="subsection-title">Automatisation des Mails aux Transporteurs</h3>
           <p className="subsection-description">
           <br></br>
-            J'ai développé une fonctionnalité d'envoi automatique d'e-mails aux transporteurs lors de la sélection d'un chargement. Pour des raisons de confidentialité, cette page ne peut être présentée.
-          </p>
+            Dans le cadre de mes responsabilités, j'ai conçu et développé une fonctionnalité permettant d'optimiser la communication avec les transporteurs. Cette interface offre la possibilité de visualiser une liste des chargements disponibles et, par une sélection ciblée, d'initier l'envoi automatique d'e-mails aux transporteurs concernés. Ce processus permet de rationaliser la diffusion des informations relatives aux chargements et de faciliter l'organisation du transport. 
+            </p>
+            <br></br>
+            <p><strong>**Pour des raisons de confidentialité, la présentation visuelle de cette page spécifique n'est pas possible.**</strong></p>
+          <br></br><br></br><br></br>
+            <img src="/imagesProjet/Capture Jung 5.png" alt="Vue de l'État des Stocks" className="project-imageJung centered-image" />
           <br></br>
-          <p>
-            **Note de confidentialité :** Toutes les informations et captures d'écran présentées ici sont à titre anonyme et peuvent être divulguées. Aucune donnée sensible ou confidentielle de l'entreprise Jung Logistique n'est montrée.
-          </p>
-          {/* Pas d'image pour cette section */}
         </div>
 
       </section>

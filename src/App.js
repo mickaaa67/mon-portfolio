@@ -5,6 +5,8 @@ import ProjectONF from "./pages/ProjectONF";
 import ProjectJung from "./pages/ProjectJung";
 import ProjectBricoBrac from "./pages/ProjectBricobrac"; // Importe la page pour BricoBrac
 import ProjectFormatech from "./pages/ProjectFormatech"; // Importe la page pour FormaTech
+import ProjectEcolotri from "./pages/ProjectEcolotri"; // Importe la page pour Ecolotri
+
 
 
 export default function App() {
@@ -16,6 +18,7 @@ export default function App() {
         <Route path="/projects/jung" element={<ProjectJung />} />
         <Route path="/projects/bricobrac" element={<ProjectBricoBrac />} /> 
         <Route path="/projects/formatech" element={<ProjectFormatech />} /> 
+        <Route path="/projects/ecolotri" element={<ProjectEcolotri />} /> 
       </Routes>
     </Router>
   );
