@@ -432,3 +432,237 @@ a:hover {
 #contact p {
   font-family: 'InterVariable', sans-serif; /* Application de la police Inter */
 }
+
+/* Formulaire de contact */
+
+/* Styles généraux pour la section contact */
+#contact.section {
+  padding: 4rem 2rem;
+  background-color: #1e293b; /* Couleur de fond sombre */
+  color: #f8fafc; /* Couleur du texte clair */
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #38bdf8; /* Couleur du titre accentuée */
+}
+
+#contact p {
+  margin-bottom: 2rem;
+  color: #a1a1aa; /* Couleur du texte secondaire */
+}
+
+/* Styles pour le formulaire de contact */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  padding: 2rem;
+  background-color: #0f172a; /* Fond plus sombre pour le formulaire */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Aligner le texte du formulaire à gauche */
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #cbd5e1; /* Couleur du label */
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="subject"],
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #334155; /* Bordure discrète */
+  border-radius: 4px;
+  background-color: #1e293b; /* Fond des inputs */
+  color: #f8fafc;
+  font-size: 1rem;
+  box-sizing: border-box; /* Important pour le padding et la bordure */
+}
+
+.form-group textarea {
+  resize: vertical; /* Permettre le redimensionnement vertical */
+}
+
+.required-field {
+  font-size: 0.8rem;
+  color: #fca5a5; /* Couleur pour les champs obligatoires */
+  margin-top: 0.25rem;
+}
+
+.form-consent {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.form-consent input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.form-consent label {
+  font-size: 0.85rem;
+  color: #a1a1aa;
+}
+
+.form-consent a {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+.button {
+  background-color: #38bdf8; /* Couleur du bouton principal */
+  color: #f8fafc;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #22d3ee; /* Couleur du bouton au survol */
+}
+
+.migration-info {
+  font-size: 0.8rem;
+  color: #a1a1aa;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Styles pour les informations de contact direct */
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Styles pour les icônes sociales */
+.socials-contact {
+  margin-top: 2rem;
+}
+
+.socials-contact h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 1rem;
+  color: #a1a1aa;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #38bdf8;
+}
+
+/* Projets */
+
+.project-page {
+  /* Styles pour le conteneur principal de la page projet */
+  padding: 20px;
+}
+
+.project-header {
+  /* Styles pour l'en-tête de la page projet */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.project-overview {
+  /* Styles pour la section de contexte */
+  margin-bottom: 30px;
+}
+
+.project-features {
+  /* Styles pour la section des fonctionnalités */
+  margin-bottom: 30px;
+}
+
+.feature-group {
+  /* Styles pour chaque groupe de fonctionnalité */
+  margin-bottom: 20px;
+}
+
+.feature-group h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.screenshot {
+  /* Styles pour les captures d'écran */
+  margin: 10px 0;
+  text-align: center;
+}
+
+.screenshot img {
+  max-width: 80%;
+  height: auto;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #ddd;
+}
+
+
+.project-technologies {
+  /* Styles pour la section des technologies */
+  margin-top: 20px;
+}
+
+.project-technologies ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.project-technologies li {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.project-footer {
+  /* Styles pour le pied de page */
+  margin-top: 30px;
+  text-align: center;
+}
