@@ -67,8 +67,13 @@ function ProjectEcolotri() {
         <img src="/imagesProjet/mcd ecolotri.png" alt="Modèle Conceptuel de Données du projet Ecolotri" className="site-map-imageEcolotri centered-image" style={{ maxWidth: '80%' }} />
         <br></br>
         <p className="section-description">
-          Ce Modèle Conceptuel de Données (MCD) illustre l'organisation des informations pour le projet Ecolotri. Les entités principales comprennent les <strong>Utilisateurs</strong> (administrateurs et transporteurs) qui se connectent au système. Les <strong>Pesées</strong> constituent le cœur des données, enregistrant des informations telles que le syndicat, l'immatriculation du camion, le type de déchet, et le poids. Des entités comme <strong>Syndicat</strong> et <strong>TypeDechet</strong> permettent de catégoriser les données. Le MCD détaille également les relations entre ces entités pour assurer la cohérence et l'intégrité des informations, notamment la relation entre les utilisateurs et les pesées qu'ils créent ou gèrent, ainsi que les liens vers les tables de référence pour les syndicats et les types de déchets utilisés dans les statistiques.
+          Ce MCD organise les données d'Ecolotri autour de trois éléments : les Syndicats (regroupements de communes avec leurs informations), les Pesées (enregistrements de chaque pesée avec date, poids, etc.), et les Types de Déchet (catégories de déchets).
+
+          Chaque Pesée est obligatoirement liée à un seul Syndicat et concerne un seul Type de Déchet. Un Syndicat peut avoir plusieurs Pesées, et un Type de Déchet peut être associé à plusieurs Pesées.
+
+          En bref, il structure les informations pour suivre les pesées de déchets par syndicat et par type.
         </p>
+        <br></br><br></br><br></br>
       </section>
 
       <section className="project-preview centered-section">
@@ -77,7 +82,7 @@ function ProjectEcolotri() {
           Pour avoir un aperçu visuel des différentes pages et fonctionnalités du site Ecolotri, veuillez consulter la vidéo de présentation ci-dessous.
         </p>
         <div className="video-container centered-element">
-          <video src="/videosProjet/presentationEcolotri.mp4" controls width="640" height="360">
+          <video src="/videosProjet/captureEcolotri.mp4" controls width="640" height="360">
             Votre navigateur ne supporte pas la lecture de vidéos.
           </video>
         </div>
