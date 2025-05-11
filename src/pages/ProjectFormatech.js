@@ -27,16 +27,17 @@ function ProjectFormaTech() {
         </p>
         <br></br>
         <ul className="indent-list">
-          <li>La gestion des utilisateurs (création, modification, suppression des comptes).</li>
-          <li>L'administration des promotions (gestion des cohortes d'apprenants).</li>
-          <li>La gestion des salles (affectation des salles aux sessions de formation).</li>
-          <li>La fonctionnalité d'ajout, de modification et de suppression des informations relatives aux formations, modules et cours.</li>
-          {/* Ajoutez ici les autres aspects spécifiques sur lesquels tu as travaillé */}
+          <li>Gestion complète (création, modification, suppression/ajout) des utilisateurs, formations, modules et intervenants, incluant la conception initiale de la base de données et l'insertion des premières données.</li>
+          <li>La création de la base de données nécessaire au fonctionnement de l'application, en suivant le Modèle Conceptuel de Données (MCD) préétabli.</li>
+          <li>L'insertion des valeurs initiales dans les différentes tables de la base de données pour initialiser l'application.</li>
         </ul>
         <br></br>
         <p>
           La gestion de projet a été assurée à l'aide d'outils collaboratifs tels que Trello pour le suivi des tâches et GitHub pour la gestion du code source, simulant ainsi des conditions de travail réelles.
         </p>
+        <br></br>
+        <img src="/imagesProjet/trelloFormatech.png" alt="Arborescence de l'application FormaTech" className="trello-map-image centered-image" />
+        <br></br>
       </section>
 
       <section className="site-architecture centered-section">
@@ -52,17 +53,13 @@ function ProjectFormaTech() {
       <section className="project-preview centered-section">
         <h2 className="section-title">Aperçu de l'application</h2>
         <p>
-          Pour avoir un aperçu visuel des différentes pages et fonctionnalités de l'application web FormaTech, veuillez consulter la vidéo de présentation ci-dessous.
+        Pour avoir un aperçu visuel des différentes fonctionnalités de gestion que j'ai contribué à établir au sein de l'application web FormaTech, veuillez consulter la vidéo de présentation ci-dessous.
         </p>
         <div className="video-container centered-element">
-          <video src="/videosProjet/presentationFormaTech.mp4" controls width="640" height="360">
+          <video src="/videosProjet/captureFormaTech.mp4" controls width="640" height="360">
           </video>
         </div>
       </section>
-
-      <footer className="project-footer">
-        <Link to="/projects">Retour à la liste des projets</Link>
-      </footer>
     </div>
   );
 }

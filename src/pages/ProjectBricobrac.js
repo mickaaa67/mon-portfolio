@@ -54,10 +54,6 @@ function ProjectBricoBrac() {
           </video>
         </div>
       </section>
-
-      <footer className="project-footer">
-        <Link to="/projects">Retour à la liste des projets</Link>
-      </footer>
     </div>
   );
 }

@@ -714,7 +714,7 @@ a:hover {
   left: 20px;
   top: 20px; /* Ajustez la position verticale si nécessaire */
   font-size: 1.5em;
-  color: #333;
+  color: #007bff;
   text-decoration: none;
 }
 
@@ -738,11 +738,20 @@ a:hover {
 }
 
 .site-map-image {
-  max-width: 90%;
+  max-width:110%;
   height: auto;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.trello-map-image {
+  max-width: 110%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
 
 .indent-list {
   padding-left: 20px; /* Ajustez cette valeur pour contrôler la marge à gauche */

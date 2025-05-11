@@ -6,7 +6,7 @@ function ProjectEcolotri() {
   return (
     <div className="project-page centered-content">
       <header className="project-header">
-        <Link to="/projects" className="back-button">
+        <Link to="/" className="back-button">
           <FaArrowLeft />
         </Link>
         <div className="title-logo">
@@ -87,10 +87,6 @@ function ProjectEcolotri() {
           </video>
         </div>
       </section>
-
-      <footer className="project-footer">
-        <Link to="/projects">Retour à la liste des projets</Link>
-      </footer>
     </div>
   );
 }
