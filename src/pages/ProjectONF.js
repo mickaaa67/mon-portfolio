@@ -59,7 +59,7 @@ function ProjectONF() {
           Pour avoir un aperçu visuel des différentes pages et fonctionnalités du site de commande pour l'ONF, veuillez consulter la vidéo de présentation ci-dessous.
         </p>
         <div className="video-container centered-element">
-          <video src="/videosProjet/presentationONF.mp4" controls width="640" height="360">
+          <video src="/videosProjet/captureONF.mp4" controls width="640" height="360">
           </video>
         </div>
       </section>

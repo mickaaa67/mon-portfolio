@@ -768,11 +768,12 @@ a:hover {
 }
 
 .project-logoONF {
-  max-width: 800px; /* Ajuste cette valeur selon tes besoins */
-  max-height: 800px; /* Ajuste cette valeur selon tes besoins */
+  max-width: 500px; /* Ajuste cette valeur selon tes besoins */
+  max-height: 500px; /* Ajuste cette valeur selon tes besoins */
   width: auto;
   height: auto;
 }
+
 
 .site-map-imageONF {
   max-width: 1200px; /* Conserve la largeur maximale */
@@ -817,5 +818,36 @@ a:hover {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+
+.titlelogodaramic {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments en colonne */
+  align-items: center; /* Centre horizontalement les éléments */
+  justify-content: center; /* Centre verticalement les éléments (peut être ajusté) */
+}
+
+.titlelogodaramic .project-title {
+  margin-bottom: 10px; /* Ajoute de l'espace entre le titre et les images */
+  text-align: center; /* Centre le texte du titre */
+}
+
+.titlelogodaramic > div { /* Crée un conteneur pour les images */
+  display: flex;
+  align-items: center; /* Centre verticalement les images */
+  justify-content: center; /* Centre horizontalement les images */
+}
+
+.titlelogodaramic > div > img { /* Style pour les images à l'intérieur du conteneur */
+  height: auto;
+  max-height: 40px; /* Taille maximale des images */
+  margin: 0 10px; /* Espacement entre les images */
+}
+
+
+
+
+
+
 
 
