@@ -1,60 +1,94 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Si tu utilises React Router pour la navigation
-import { FaArrowLeft } from 'react-icons/fa'; // Importe l'icône de flèche gauche
+import { FaGithub, FaLinkedin, FaCode, FaBriefcase, FaEnvelope, FaMicrochip, FaGavel, FaArrowLeft } from "react-icons/fa";
+import Layout from "../Layout";
+import NavBar from "../NavBar";
 
 function ProjectBricoBrac() {
   return (
-    <div className="project-page centered-content">
-      <header className="project-header">
-        <Link to="/" className="back-button">
-          <FaArrowLeft />
-        </Link>
-        <div className="title-logo">
-          <h1 className="project-title">Projet Brico'Brac - Site de Vente en Ligne</h1>
-          <img src="/imagesProjet/logoBricoBrac.png" alt="Logo Brico'Brac" className="project-logo centered-image" />
-        </div>
-      </header>
-
-      <section className="project-presentation">
-        <h2 className="section-title">Présentation du projet</h2>
-        <p>
-          Le projet Brico'Brac est un site de vente en ligne pour une chaîne de magasins de bricolage familiale. L'objectif était de créer une plateforme permettant à l'entreprise d'étendre sa présence au-delà des magasins physiques et d'offrir ses produits à une clientèle plus large.
-        </p>
-        <br></br><br></br>
-        <h3>Mes contributions au projet :</h3>
-        <br></br>
-        <p>
-          En tant que membre d'une équipe de trois personnes, j'ai participé activement au développement de ce projet réalisé en une semaine dans le cadre de notre formation. Mes principales contributions ont concerné :
-        </p>
-        <br></br>
-        <ul className="indent-list"> {/* Ajout de la classe indent-list */}
-          <li>L'implémentation du système de gestion des droits d'administrateur.</li>
-          <li>Le développement de l'interface de liste et de gestion du catalogue des articles (ajout, modification, suppression).</li>
-          <li>La gestion de l'authentification des utilisateurs et la connexion à la base de données.</li>
+    <>
+      <NavBar className={`navbar "navbar--visible" : "navbar--hidden"}`}>
+        <ul className="navbar-list">
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </section>
+      </NavBar>
+      <br></br><br></br>
+      <div className="project-page centered-content">
+        <header className="project-header">
+          <div className="title-logo">
+            <div className="title-row">
+              <Link to="/" className="back-button">
+                <FaArrowLeft />
+              </Link>
+              <h1 className="project-title">Projet Brico'Brac - Site de Vente en Ligne</h1>
+            </div>
+            <img
+              src="/imagesProjet/logoBricoBrac.png"
+              alt="Logo Brico'Brac"
+              className="project-logo centered-image"
+            />
+          </div>
+        </header>
+        <section className="project-presentation">
+          <h2 className="section-title">Présentation du projet</h2>
+          <p>
+            Le projet Brico'Brac est un site de vente en ligne pour une chaîne de magasins de bricolage familiale. L'objectif était de créer une plateforme permettant à l'entreprise d'étendre sa présence au-delà des magasins physiques et d'offrir ses produits à une clientèle plus large.
+          </p>
+          <br></br><br></br>
+          <h3>Mes contributions au projet :</h3>
+          <br></br>
+          <p>
+            En tant que membre d'une équipe de trois personnes, j'ai participé activement au développement de ce projet réalisé en une semaine dans le cadre de notre formation. Mes principales contributions ont concerné :
+          </p>
+          <br></br>
+          <ul className="indent-list"> {/* Ajout de la classe indent-list */}
+            <li>L'implémentation du système de gestion des droits d'administrateur.</li>
+            <li>Le développement de l'interface de liste et de gestion du catalogue des articles (ajout, modification, suppression).</li>
+            <li>La gestion de l'authentification des utilisateurs et la connexion à la base de données.</li>
+          </ul>
+        </section>
 
-      <section className="site-architecture centered-section">
-        <h2 className="section-title">Aperçu du Modèle Conceptuel des Données</h2>
-        <img src="/imagesProjet/Capture BricoBrac 4.png" alt="Arborescence du site Brico'Brac" className="site-map-image centered-image" />
-        <br></br>
-        <p>La base de données structure les **articles**, les **clients** (avec leurs rôles) et leurs **commandes**. Les **paniers** des clients mènent à la création de **commandes**. Des **utilisateurs** (clients, gestionnaires, administrateurs) interagissent avec le système, et leurs actions sont suivies via des **logs**.</p>
-      </section>
+        <section className="site-architecture centered-section">
+          <h2 className="section-title">Aperçu du Modèle Conceptuel des Données</h2>
+          <img src="/imagesProjet/Capture BricoBrac 4.png" alt="Arborescence du site Brico'Brac" className="site-map-image centered-image" />
+          <br></br>
+          <p>La base de données structure les **articles**, les **clients** (avec leurs rôles) et leurs **commandes**. Les **paniers** des clients mènent à la création de **commandes**. Des **utilisateurs** (clients, gestionnaires, administrateurs) interagissent avec le système, et leurs actions sont suivies via des **logs**.</p>
+        </section>
 
-      <section className="project-preview centered-section">
-        <h2 className="section-title">Aperçu du site</h2>
-        <br></br>
-        <p>
-          Pour avoir un aperçu visuel des différentes pages et fonctionnalités du site, veuillez consulter la vidéo de présentation ci-dessous.
-        </p>
-        <br></br>
-        <div className="video-container centered-element">
-          
-          <video src="/videosProjet/CaptureBricobrac.mp4" controls width="640" height="360">
-          </video>
+        <section className="project-preview centered-section">
+          <h2 className="section-title">Aperçu du site</h2>
+          <br></br>
+          <p>
+            Pour avoir un aperçu visuel des différentes pages et fonctionnalités du site, veuillez consulter la vidéo de présentation ci-dessous.
+          </p>
+          <br></br>
+          <div className="video-container centered-element">
+            
+            <video src="/videosProjet/CaptureBricobrac.mp4" controls width="640" height="360">
+            </video>
+          </div>
+        </section>
+      </div>
+      <br></br><br></br><br></br><br></br><br></br>
+      <footer className="portfolio-footer">
+        <p>© 2025 Hoffer Mickael. Tous droits réservés.</p>
+        <div className="socials-footer">
+          <a href="https://github.com/mickaaa67" target="_blank" rel="noreferrer">
+            <FaGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/mickael-hoffer-906a072aa/" target="_blank" rel="noreferrer">
+            <FaLinkedin />
+          </a>
+          <a href="mailto:mickael.hoffer@gmail.com" className="email-icon">
+            <FaEnvelope />
+          </a>
         </div>
-      </section>
-    </div>
+      </footer>
+    </>
   );
 }
 

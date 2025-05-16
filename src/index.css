@@ -10,6 +10,8 @@ body {
   background-color: #0f172a; /* Bleu nuit */
   color: #f8fafc; /* Blanc cassé */
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 .header-info {
@@ -53,7 +55,7 @@ a:hover {
 
 /* Container */
 .container {
-  max-width: 1400px; /* Essaie une valeur plus grande */
+  max-width: 1200px; /* Essaie une valeur plus grande */
   margin: 0 auto;
   padding: 2rem 3rem; /* Ajoute un peu de padding horizontal */
 }
@@ -403,6 +405,55 @@ a:hover {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Police du sous-titre animé reste la même */
 }
 
+.portfolio-footer {
+  display: flex;
+  flex-direction: column; /* Organise le texte et les icônes verticalement */
+  justify-content: center; /* Centre le contenu verticalement */
+  align-items: center; /* Centre le contenu horizontalement */
+  padding: 30px 0;
+  font-size: 0.9rem; /* Augmentation de la taille de la police pour une meilleure visibilité */
+  color: #007bff;
+  border-top: none;
+  background-color: #01071b; /* Couleur de fond du footer */
+  width: 100%;
+  /* Assure-toi qu'il s'étende sur toute la largeur */
+  position: static; /* Garde le positionnement static */
+  bottom: 0; /* Force-le potentiellement au bas (peut ne pas être nécessaire avec static) */
+  left: 0;
+  z-index: 20; /* Assure-toi qu'il est au-dessus des autres éléments si nécessaire */
+}
+
+.portfolio-footer p {
+  margin-bottom: 20px; /* Ajoute un espace entre le texte et les icônes */
+}
+
+.socials-footer {
+  display: flex;
+  gap: 20px; /* Espacement entre les icônes */
+}
+
+.socials-footer a {
+  color: #007bff; /* Couleur des icônes */
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.socials-footer a:hover {
+  color: #007bff; /* Couleur au survol */
+}
+
+/* Assure-toi que le conteneur principal de ton application prend au moins toute la hauteur de la fenêtre */
+.container {
+  min-height: 100vh; /* Force le conteneur à avoir au moins la hauteur de l'écran */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pousse le footer vers le bas en utilisant la marge automatique */
+.portfolio-footer {
+  margin-top: auto;
+}
+
 /* Animation de frappe fluide */
 @keyframes typing-fluid {
   from { width: 0 }
@@ -661,12 +712,6 @@ a:hover {
   border-radius: 5px;
 }
 
-.project-footer {
-  /* Styles pour le pied de page */
-  margin-top: 30px;
-  text-align: center;
-}
-
 .centered-content {
   text-align: center; /* Centre le texte des éléments enfants par défaut */
 }
@@ -709,10 +754,14 @@ a:hover {
   align-items: center;
 }
 
+.title-row {
+  display: flex;
+  align-items: center; /* aligne verticalement la flèche et le titre */
+  gap: 20px; /* espace entre la flèche et le titre */
+}
+
 .back-button {
-  position: absolute;
-  left: 20px;
-  top: 20px; /* Ajustez la position verticale si nécessaire */
+  position: static; /* enlever absolute */
   font-size: 1.5em;
   color: #007bff;
   text-decoration: none;
@@ -751,11 +800,11 @@ a:hover {
   margin-bottom: 10px;
 }
 
-
-
 .indent-list {
-  padding-left: 20px; /* Ajustez cette valeur pour contrôler la marge à gauche */
-  text-align: left; /* Réalignez le texte à gauche à l'intérieur de la liste */
+  margin-left: 1.5em !important;  /* Forcer une indentation positive */
+  padding-left: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .project-presentation ul {
@@ -792,7 +841,8 @@ a:hover {
 
 .project-imageJung{
   /* Les autres styles que tu as déjà pour le logo */
-  width: 1400px; /* Agrandir la largeur à 300 pixels */
+  width: 1200px; /* Agrandir la largeur à 300 pixels */
+  margin-left: -215px;
   height: auto; /* La hauteur s'ajustera automatiquement pour conserver les proportions */
 }
 
@@ -805,7 +855,7 @@ a:hover {
 }
 
 .indent-listHeineken {
-  padding-left: 630px; /* Ajustez cette valeur pour contrôler la marge à gauche */
+  padding-left: 520px; /* Ajustez cette valeur pour contrôler la marge à gauche */
   text-align: left; /* Réalignez le texte à gauche à l'intérieur de la liste */
   max-width: 1430px;
 }
@@ -843,6 +893,131 @@ a:hover {
   max-height: 40px; /* Taille maximale des images */
   margin: 0 10px; /* Espacement entre les images */
 }
+
+/* Partie pour la page de confidentialité */
+
+.privacy-container {
+  background-color: #ffffff;
+  color: #222;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.privacy-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.privacy-header .back-button {
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.privacy-header .back-button:hover {
+  color: #007bff;
+}
+
+.privacy-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.privacy-content h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #111;
+  border-left: 4px solid #007bff;
+  padding-left: 0.75rem;
+}
+
+.privacy-content p {
+  margin-bottom: 1rem;
+}
+
+.privacy-content ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+.last-updated {
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #01071b;
+  color: #007bff;
+  padding: 10px 20px;
+  transition: top 0.3s ease;
+  z-index: 9999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.navbar--hidden {
+  top: -60px; /* cache la navbar en la décalant vers le haut */
+}
+
+.navbar--visible {
+  top: 0;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar-list li:first-child {
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+.navbar-list li:not(:first-child) {
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+.navbar-list li a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.navbar-list li a:hover {
+  color: #1e90ff;
+}
+
+
+
+
+
+
+
 
 
 
