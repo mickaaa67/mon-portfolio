@@ -8,24 +8,25 @@ import NavBar from "./NavBar";
 function PolitiqueConfidentialite() {
   return (
     <>
-      <NavBar className={`navbar "navbar--visible" : "navbar--hidden"}`}>
+      <NavBar className={`navbar "navbar--visible" : "navbar--hidden"`}>
         <ul className="navbar-list">
-          <li><a href="#presentation">Présentation</a></li>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#parcours">Parcours</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/#about">Présentation</Link></li>
+          <li><Link to="/#parcours-pro">Parcours</Link></li>
+          <li><Link to="/#skills">Compétences</Link></li>
+          <li><Link to="/#projects">Projets</Link></li>
+          <li><Link to="/#contact">Contact</Link></li>
         </ul>
       </NavBar>
       <br></br>
       <div className="privacy-container">
         <header className="privacy-header">
-          <Link to="/" className="back-button">
-            <FaArrowLeft />
-          </Link>
-          <h1 className="privacy-title">Politique de Confidentialité</h1>
+          <div className="title-row">
+            <Link to="/#contact" className="back-button">
+              <FaArrowLeft />
+            </Link>
+            <h1 className="privacy-title">Politique de Confidentialité</h1>
+          </div>
         </header>
-
         <main className="privacy-content">
           <section>
             <h2>Introduction</h2>

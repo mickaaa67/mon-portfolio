@@ -7,13 +7,13 @@ import NavBar from "../NavBar";
 function ProjectEcolotri() {
   return (
     <>
-      <NavBar className={`navbar "navbar--visible" : "navbar--hidden"}`}>
+      <NavBar className={`navbar "navbar--visible" : "navbar--hidden"`}>
         <ul className="navbar-list">
-          <li><a href="#presentation">Présentation</a></li>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#parcours">Parcours</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/#about">Présentation</Link></li>
+          <li><Link to="/#parcours-pro">Parcours</Link></li>
+          <li><Link to="/#skills">Compétences</Link></li>
+          <li><Link to="/#projects">Projets</Link></li>
+          <li><Link to="/#contact">Contact</Link></li>
         </ul>
       </NavBar>
       <br></br><br></br>
@@ -21,7 +21,7 @@ function ProjectEcolotri() {
         <header className="project-header">
             <div className="title-logo">
               <div className="title-row">
-                <Link to="/" className="back-button">
+              <Link to="/#projects" className="back-button">
                   <FaArrowLeft />
                 </Link>
                 <h1 className="project-title">Projet Ecolotri - Application de Suivi des Collectes</h1>

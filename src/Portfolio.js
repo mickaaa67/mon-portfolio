@@ -5,6 +5,8 @@ import { useRef,useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Layout from "./Layout";
 import NavBar from "./NavBar";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const projects = [
   {
@@ -92,18 +94,32 @@ export default function Portfolio() {
     setMessage('');
   };
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const el = document.getElementById(id);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 100); // petit délai pour que le DOM soit chargé
+      }
+    }
+  }, [location]);
+
   return (
     <>
-      <NavBar className={`navbar "navbar--visible" : "navbar--hidden"}`}>
+      <NavBar className={`navbar "navbar--visible" : "navbar--hidden"`}>
         <ul className="navbar-list">
-          <li><a href="#presentation">Présentation</a></li>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#parcours">Parcours</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/#about">Présentation</Link></li>
+          <li><Link to="/#parcours-pro">Parcours</Link></li>
+          <li><Link to="/#skills">Compétences</Link></li>
+          <li><Link to="/#projects">Projets</Link></li>
+          <li><Link to="/#contact">Contact</Link></li>
         </ul>
       </NavBar>
-      <br></br><br></br>
+      <br id="about"></br><br></br>
       <div className="container">
         <div className="header-info animated-text">
           <h1>Mickael Hoffer</h1>
@@ -122,22 +138,22 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <section id="about" className="section about-section">
+        <section className="section about-section">
           <div className="about-text">
           <h2 class="text-4xl sm:text-6xl text-start font-bold pb-4">Présentation 👨🏻‍💻</h2>
             <p>
               Jeune développeur de 21 ans, passionné par le développement web, Titulaire d'un BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers qui m'a permis de structuré mes compétences. Fort de plusieurs réalisations qui témoignent de ma motivation, je recherche activement un poste de développeur web en alternance pour un an, dans le cadre de ma préparation à la Licence professionnelle Développement Web Communication et Apprentissages.
             </p>
-              <a href="https://drive.google.com/file/d/1IhoHgHyNilNV6BdPGIqWUjolSKabY2me/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="button">
+              <a href="https://drive.google.com/file/d/14IS1Tw6PF5hOHphvPJFDE9OG13T1BU_8/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="button">
                 Voir mon CV
               </a>
           </div>
           <div className="about-image">
             <img src="/images/présentation.png" alt="Illustration à propos de moi" />
           </div>
-        </section>
-        <br></br><br></br><br></br>
-        <section id="parcours-pro" className="parcours-pro-section">
+        </section >
+        <br id="parcours-pro"></br><br></br><br></br>
+        <section  className="parcours-pro-section">
           <h2>Mon Parcours Professionnel en Informatique 💻 </h2>
           <div className="timeline-container">
             <div className="timeline-column experiences">
@@ -198,8 +214,8 @@ export default function Portfolio() {
             </div>
           </div>
         </section>
-        <br></br><br></br><br></br>
-        <section id="skills" className="section">
+        <br id="skills"></br><br></br><br></br>
+        <section className="section">
           <h2> Mes compétences</h2>
           <br />
           <div className="skills-container">
@@ -293,8 +309,8 @@ export default function Portfolio() {
             </div>
           </div>
         </section>
-        <br></br><br></br><br></br>
-        <section id="projects" className="section">
+        <br id="projects"></br><br></br><br></br>
+        <section className="section">
           <h2>Mes projets</h2>
           <br></br>
           <div className="grid">

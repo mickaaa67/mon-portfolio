@@ -9,6 +9,7 @@ import ProjectEcolotri from "./pages/ProjectEcolotri"; // Importe la page pour E
 import ProjectServiceNow from "./pages/ProjectServiceNow"; // Importe la page pour ServiceNow
 import PolitiqueConfidentialite from './PolitiqueConfidentialite'; // Importe la page de confidentialité
 import Layout from './Layout'; // Importe le layout
+import ScrollToTop from "./ScrollToTop"; // importe le composant
 
 
 
@@ -17,6 +18,7 @@ import Layout from './Layout'; // Importe le layout
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Portfolio />} />
         <Route path="/projects/onf" element={<ProjectONF />} />

@@ -7,13 +7,13 @@ import NavBar from "../NavBar";
 function ProjectONF() {
   return (
     <>
-      <NavBar className={`navbar "navbar--visible" : "navbar--hidden"}`}>
+      <NavBar className={`navbar "navbar--visible" : "navbar--hidden"`}>
         <ul className="navbar-list">
-          <li><a href="#presentation">Présentation</a></li>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#parcours">Parcours</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/#about">Présentation</Link></li>
+          <li><Link to="/#parcours-pro">Parcours</Link></li>
+          <li><Link to="/#skills">Compétences</Link></li>
+          <li><Link to="/#projects">Projets</Link></li>
+          <li><Link to="/#contact">Contact</Link></li>
         </ul>
       </NavBar>
       <br></br><br></br>
@@ -21,7 +21,7 @@ function ProjectONF() {
         <header className="project-header">
           <div className="title-logo">
             <div className="title-row">
-              <Link to="/" className="back-button">
+              <Link to="/#projects" className="back-button">
                 <FaArrowLeft />
               </Link>
               <h1 className="project-title">Projet ONF - Site de Commande d'Équipements</h1>
@@ -80,9 +80,16 @@ function ProjectONF() {
             <video src="/videosProjet/captureONF.mp4" controls width="640" height="360">
             </video>
           </div>
+          <br></br><br></br><br></br><br></br>
+          <h1 className="section-title">Bilan de l’expérience</h1>
+            <br></br>
+            <p>
+              Ce projet, mené en totale autonomie, a été l’occasion de consolider mon expertise technique tout en développant mes aptitudes en gestion de projet. Travailler seul sur l’ensemble de la plateforme m’a permis de prendre des décisions architecturales, de piloter la conception de l’interface utilisateur, puis d’enchaîner sur le développement front‑end (HTML/CSS) et back‑end (PHP/MySQL) sans dépendre d’un référent technique. J’ai également animé régulièrement des réunions d’avancement avec les parties prenantes : ces points hebdomadaires m’ont donné l’occasion de présenter les nouvelles fonctionnalités, de recueillir des retours et d’ajuster rapidement le planning.
+            <br></br><br></br>
+              Enfin, piloter ces réunions de suivi et coordonner la communication entre les utilisateurs finaux et l’équipe IT a été une expérience particulièrement enrichissante, qui m’a conforté dans mon choix de carrière et m’incite à relever de nouveaux défis d’envergure.            </p>
         </section>
       </div>
-      <br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br>
       <footer className="portfolio-footer">
         <p>© 2025 Hoffer Mickael. Tous droits réservés.</p>
         <div className="socials-footer">

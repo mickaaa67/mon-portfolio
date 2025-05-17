@@ -3,17 +3,20 @@ import { Link } from 'react-router-dom'; // Si tu utilises React Router pour la 
 import { FaGithub, FaLinkedin, FaCode, FaBriefcase, FaEnvelope, FaMicrochip, FaGavel, FaArrowLeft } from "react-icons/fa";
 import Layout from "../Layout";
 import NavBar from "../NavBar";
+import { useEffect } from "react";
+
 
 function ProjectBricoBrac() {
+  
   return (
     <>
-      <NavBar className={`navbar "navbar--visible" : "navbar--hidden"}`}>
+      <NavBar className={`navbar "navbar--visible" : "navbar--hidden"`}>
         <ul className="navbar-list">
-          <li><a href="#presentation">Présentation</a></li>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#parcours">Parcours</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/#about">Présentation</Link></li>
+          <li><Link to="/#parcours-pro">Parcours</Link></li>
+          <li><Link to="/#skills">Compétences</Link></li>
+          <li><Link to="/#projects">Projets</Link></li>
+          <li><Link to="/#contact">Contact</Link></li>
         </ul>
       </NavBar>
       <br></br><br></br>
@@ -21,7 +24,7 @@ function ProjectBricoBrac() {
         <header className="project-header">
           <div className="title-logo">
             <div className="title-row">
-              <Link to="/" className="back-button">
+              <Link to="/#projects" className="back-button">
                 <FaArrowLeft />
               </Link>
               <h1 className="project-title">Projet Brico'Brac - Site de Vente en Ligne</h1>
@@ -33,7 +36,7 @@ function ProjectBricoBrac() {
             />
           </div>
         </header>
-        <section className="project-presentation">
+        <section id="details-projet" className="project-presentation">
           <h2 className="section-title">Présentation du projet</h2>
           <p>
             Le projet Brico'Brac est un site de vente en ligne pour une chaîne de magasins de bricolage familiale. L'objectif était de créer une plateforme permettant à l'entreprise d'étendre sa présence au-delà des magasins physiques et d'offrir ses produits à une clientèle plus large.

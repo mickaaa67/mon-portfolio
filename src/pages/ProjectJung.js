@@ -7,13 +7,13 @@ import NavBar from "../NavBar";
 function ProjectJung() {
   return (
     <>
-      <NavBar className={`navbar "navbar--visible" : "navbar--hidden"}`}>
+      <NavBar className={`navbar "navbar--visible" : "navbar--hidden"`}>
         <ul className="navbar-list">
-          <li><a href="#presentation">Présentation</a></li>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#parcours">Parcours</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/#about">Présentation</Link></li>
+          <li><Link to="/#parcours-pro">Parcours</Link></li>
+          <li><Link to="/#skills">Compétences</Link></li>
+          <li><Link to="/#projects">Projets</Link></li>
+          <li><Link to="/#contact">Contact</Link></li>
         </ul>
       </NavBar>
       <br></br><br></br>
@@ -21,7 +21,7 @@ function ProjectJung() {
         <header className="project-header">
           <div className="title-logo">
             <div className="title-row">
-              <Link to="/" className="back-button">
+              <Link to="/#projects" className="back-button">
                 <FaArrowLeft />
               </Link>
               <h1 className="project-title">
@@ -219,13 +219,19 @@ function ProjectJung() {
             <h3 className="subsection-title">Automatisation des Mails aux Transporteurs</h3>
             <p className="subsection-description">
             <br></br>
-              Dans le cadre de mes responsabilités, j'ai conçu et développé une fonctionnalité permettant d'optimiser la communication avec les transporteurs. Cette interface offre la possibilité de visualiser une liste des chargements disponibles et, par une sélection ciblée, d'initier l'envoi automatique d'e-mails aux transporteurs concernés. Ce processus permet de rationaliser la diffusion des informations relatives aux chargements et de faciliter l'organisation du transport. 
-              </p>
+              Dans le cadre de mes responsabilités, j'ai conçu et développé une fonctionnalité visant à optimiser la communication avec les transporteurs. Cette interface permet de visualiser l'ensemble des chargements disponibles sous forme de liste. L'utilisateur peut y sélectionner un ou plusieurs transporteurs, ainsi que les chargements correspondants, puis initier l’envoi automatique d’un e-mail.
+              <br></br><br></br>
+              Chaque transporteur reçoit un message personnalisé accompagné d’un fichier Excel en pièce jointe. Ce fichier contient le détail des chargements qui lui sont attribués : numéros de commande, adresses de chargement et de livraison, créneaux horaires, poids, volumes et toute autre information logistique nécessaire. Cette automatisation facilite grandement la planification du transport et assure une transmission fiable et rapide des informations clés.              </p>
               <br></br>
               <p><strong>**Pour des raisons de confidentialité, la présentation visuelle de cette page spécifique n'est pas possible.**</strong></p>
             <br></br><br></br><br></br>
               <img src="/imagesProjet/Capture Jung 5.png" alt="Vue de l'État des Stocks" className="project-imageJung centered-image" />
+            <br></br><br></br>
+            <h1 className="section-title">Bilan de l’expérience</h1>
             <br></br>
+            <p>
+              Cette expérience a été particulièrement enrichissante, tant sur le plan technique que humain. Elle m’a permis de confirmer mon intérêt profond, voire ma passion, pour le développement web. Travailler au sein d'une équipe projet de plus grande envergure que celle de l’ONF m’a offert l’opportunité de découvrir de nouvelles méthodes de collaboration, d'approfondir ma maîtrise des outils de versioning, notamment Git, et de monter en compétences dans un environnement structuré et stimulant. Ce projet a renforcé ma motivation à poursuivre dans cette voie et à continuer à me perfectionner dans le domaine du développement.
+            </p>
           </div>
 
         </section>
