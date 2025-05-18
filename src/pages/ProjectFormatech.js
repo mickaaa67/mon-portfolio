@@ -60,7 +60,6 @@ function ProjectFormaTech() {
 
         <section className="site-architecture centered-section">
           <h2 className="section-title">Aperçu du diagramme de classe</h2>
-          {/* Tu peux remplacer cette image par un schéma d'arborescence spécifique à FormaTech si tu en as un */}
           <img src="/imagesProjet/diagrammeFormaTech.png" alt="Arborescence de l'application FormaTech" className="site-map-image centered-image" />
           <br></br>
           <p>

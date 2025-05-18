@@ -51,7 +51,7 @@ const projects = [
       "Site web pour une chaîne de magasins de bricolage familiale.",
     technologies: ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "Trello", "GitHub"],
     year: "2024",
-    image: "/imagesProjet/logoBricoBrac.png",
+    image: "/imagesProjet/LogoBricoBrac.png",
     link: "/projects/bricobrac",
   },
   {
@@ -137,13 +137,15 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
-
+        <br></br><br></br>
         <section className="section about-section">
           <div className="about-text">
           <h2 class="text-4xl sm:text-6xl text-start font-bold pb-4">Présentation 👨🏻‍💻</h2>
+          <br></br>
             <p>
-              Jeune développeur de 21 ans, passionné par le développement web, Titulaire d'un BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers qui m'a permis de structuré mes compétences. Fort de plusieurs réalisations qui témoignent de ma motivation, je recherche activement un poste de développeur web en alternance pour un an, dans le cadre de ma préparation à la Licence professionnelle Développement Web Communication et Apprentissages.
+              Jeune développeur de 21 ans, passionné par le développement web, Titulaire d'un BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers qui m'a permis de structuré mes compétences.<br></br><br></br> Fort de plusieurs réalisations qui témoignent de ma motivation, je recherche activement un poste de développeur web en alternance pour octobre 2025 et pour une durée de 1 an, dans le cadre de ma préparation à la Licence professionnelle Développement Web Communication et Apprentissages.
             </p>
+            <br></br>
               <a href="https://drive.google.com/file/d/1Tcvhs41-KhJ3AhbcqiaQFeiEe8jOmQQC/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="button">
                 Voir mon CV
               </a>
@@ -161,27 +163,25 @@ export default function Portfolio() {
               <div className="timeline-item">
                 <div className="timeline-point"></div>
                 <div className="timeline-date">octobre 2024 - novembre 2024</div>
-                <div className="timeline-content">Stage en Informatique chez Webtech, Strasbourg </div>
+                <div className="timeline-content">Stage en Informatique<br></br>S2i Evolution - Création de sites web, Strasbourg </div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-point"></div>
                 <div className="timeline-date">septembre 2023 - septembre 2024</div>
-                <div className="timeline-content">Assistant Projet en Alternance, chez Jung Logistique, Sélestat</div>
+                <div className="timeline-content">Assistant Projet en Alternance <br></br>Jung Logistique - Transport Routier, Sélestat</div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-point"></div>
                 <div className="timeline-date">février 2023 - avril 2023</div>
-                <div className="timeline-content">Stage en Informatique à L'Office National des Forêts, Colmar
+                <div className="timeline-content">Stage en Informatique (deuxième période)<br></br>L'ONF - Gestion forestière, Colmar
                   <br />
-                  (deuxième période)
                 </div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-point"></div>
                 <div className="timeline-date">mai 2022 - juillet 2022</div>
-                <div className="timeline-content">Stage en Informatique chez Daramic, Sélestat
+                <div className="timeline-content">Stage en Informatique (première période)<br></br> Daramic - Industrie Plastique, Sélestat
                   <br />
-                  (première période)
                 </div>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function Portfolio() {
                 <div className="timeline-point"></div>
                 <div className="timeline-date">septembre 2023 - juillet 2024</div>
                 <div className="timeline-content">
-                  Brevet de Technicien Supérieur Services Informatiques aux Organisations Option Solutions Logicielles et Applications Métiers en alternance.
+                  Brevet de Technicien Supérieur Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers en alternance.
                   <br />
                   IRIS, Strasbourg
                 </div>
@@ -201,7 +201,7 @@ export default function Portfolio() {
                 <div className="timeline-point"></div>
                 <div className="timeline-date">septembre 2021 - juillet 2023</div>
                 <div className="timeline-content">
-                  Brevet de Technicien Supérieur Services Informatiques aux Organisations Option Solutions Logicielles et Applications Métiers en initial.
+                  Brevet de Technicien Supérieur Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers en initial.
                   <br />
                   Lycée Camille Sée, Colmar
                 </div>
@@ -209,7 +209,7 @@ export default function Portfolio() {
               <div className="timeline-item formation-item last">
                 <div className="timeline-point"></div>
                 <div className="timeline-date">septembre 2018 - juillet 2021</div>
-                <div className="timeline-content">Baccalauréat Technologique, Sciences et Technologies de l'Industrie et du Développement Durable option Systèmes d'Information et Numérique. Lycée Polyvalent Jean-Baptiste Schwilgué, Sélestat</div>
+                <div className="timeline-content">Baccalauréat Technologique, Sciences et Technologies de l'Industrie et du Développement Durable option Systèmes d'Information et Numérique. <br></br>Lycée Polyvalent Jean-Baptiste Schwilgué, Sélestat</div>
               </div>
             </div>
           </div>

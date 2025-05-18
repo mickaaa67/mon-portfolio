@@ -57,11 +57,12 @@ function ProjectBricoBrac() {
 
         <section className="site-architecture centered-section">
           <h2 className="section-title">Aperçu du Modèle Conceptuel des Données</h2>
-          <img src="/imagesProjet/Capture BricoBrac 4.png" alt="Arborescence du site Brico'Brac" className="site-map-image centered-image" />
+          <img src="/imagesProjet/CaptureBricoBrac4.png" alt="Arborescence du site Brico'Brac" className="site-map-image centered-image" />
           <br></br>
-          <p>La base de données structure les **articles**, les **clients** (avec leurs rôles) et leurs **commandes**. Les **paniers** des clients mènent à la création de **commandes**. Des **utilisateurs** (clients, gestionnaires, administrateurs) interagissent avec le système, et leurs actions sont suivies via des **logs**.</p>
+          <p>
+            La base de données structure les <strong>articles</strong>, les <strong>clients</strong> (avec leurs rôles) et leurs <strong>commandes</strong>. Les <strong>paniers</strong> des clients mènent à la création de <strong>commandes</strong>. Des <strong>utilisateurs</strong> (clients, gestionnaires, administrateurs) interagissent avec le système, et leurs actions sont suivies via des <strong>logs</strong>.
+          </p>        
         </section>
-
         <section className="project-preview centered-section">
           <h2 className="section-title">Aperçu du site</h2>
           <br></br>
@@ -71,7 +72,7 @@ function ProjectBricoBrac() {
           <br></br>
           <div className="video-container centered-element">
             
-            <video src="/videosProjet/CaptureBricobrac.mp4" controls width="640" height="360">
+            <video src="/videosProjet/captureBricobrac.mp4" controls width="640" height="360">
             </video>
           </div>
         </section>

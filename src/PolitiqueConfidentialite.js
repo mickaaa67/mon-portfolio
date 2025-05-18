@@ -92,7 +92,7 @@ function PolitiqueConfidentialite() {
             <p>
               Je peux mettre à jour cette politique de confidentialité de temps à autre. Toute modification sera affichée sur cette page.
             </p>
-            <p className="last-updated">Dernière mise à jour : [Date de la dernière mise à jour]</p>
+            <p className="last-updated">Dernière mise à jour : [15/05/2025]</p>
           </section>
 
           <section>
