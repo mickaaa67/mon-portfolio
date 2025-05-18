@@ -62,7 +62,7 @@ function ProjectONF() {
         </section>
 
         <section className="site-architecture centered-section">
-          <h2 className="section-title">Aperçu du Modèle Conceptuel de Données (MCD) du projet ONF</h2>
+          <h2 className="section-title">Aperçu du Modèle Conceptuel de Données</h2>
           {/* Remplacer cette image par le schéma MCD généré pour le projet ONF */}
           <img src="/imagesProjet/mcd onf.png" alt="Modèle Conceptuel de Données du projet ONF" className="site-map-imageONF centered-image" />
           <br></br>

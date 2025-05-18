@@ -81,7 +81,7 @@ function ProjectEcolotri() {
         </section>
 
         <section className="site-architecture centered-section">
-          <h2 className="section-title">Aperçu du Modèle Conceptuel de Données (MCD) du projet Ecolotri</h2>
+          <h2 className="section-title">Aperçu du Modèle Conceptuel de Données</h2>
           {/* Remplacer cette image par le schéma MCD généré pour le projet Ecolotri */}
           <img src="/imagesProjet/mcd ecolotri.png" alt="Modèle Conceptuel de Données du projet Ecolotri" className="site-map-imageEcolotri centered-image" style={{ maxWidth: '80%' }} />
           <br></br>
