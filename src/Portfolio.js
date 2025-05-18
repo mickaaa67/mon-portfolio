@@ -51,7 +51,7 @@ const projects = [
       "Site web pour une chaîne de magasins de bricolage familiale.",
     technologies: ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "Trello", "GitHub"],
     year: "2024",
-    image: "/imagesProjet/LogoBricoBrac.png",
+    image: "/imagesProjet/logoBricoBrac.png",
     link: "/projects/bricobrac",
   },
   {
@@ -60,7 +60,7 @@ const projects = [
       "Site web conçue pour la gestion complète des formations, des modules et des cours au sein d'un organisme de formation",
     technologies: ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "Trello", "GitHub"],
     year: "2024",
-    image: "/imagesProjet/logoFormaTech.png",
+    image: "/imagesProjet/LogoFormaTech.png",
     link: "/projects/formatech",
   },
 ];

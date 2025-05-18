@@ -60,7 +60,7 @@ function ProjectFormaTech() {
 
         <section className="site-architecture centered-section">
           <h2 className="section-title">Aperçu du diagramme de classe</h2>
-          <img src="/imagesProjet/diagrammeFormaTech.png" alt="Arborescence de l'application FormaTech" className="site-map-image centered-image" />
+          <img src="/imagesProjet/diagrammeFormaTech.PNG" alt="Arborescence de l'application FormaTech" className="site-map-image centered-image" />
           <br></br>
           <p>
               Ce diagramme de classes représente un système de gestion de formations. Il distingue plusieurs entités clés : les Employés gèrent les étudiants, les Intervenants proposent des Modules qui composent des Formations. Les Sessions sont des instances de ces modules qui se déroulent dans des Salles et sont suivies par des Étudiants regroupés en Promotions. Les classes "Gestion..." indiquent les opérations possibles sur ces entités.
