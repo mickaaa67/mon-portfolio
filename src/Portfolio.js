@@ -144,7 +144,7 @@ export default function Portfolio() {
             <p>
               Jeune développeur de 21 ans, passionné par le développement web, Titulaire d'un BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers qui m'a permis de structuré mes compétences. Fort de plusieurs réalisations qui témoignent de ma motivation, je recherche activement un poste de développeur web en alternance pour un an, dans le cadre de ma préparation à la Licence professionnelle Développement Web Communication et Apprentissages.
             </p>
-              <a href="https://drive.google.com/file/d/14IS1Tw6PF5hOHphvPJFDE9OG13T1BU_8/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="button">
+              <a href="https://drive.google.com/file/d/1Tcvhs41-KhJ3AhbcqiaQFeiEe8jOmQQC/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="button">
                 Voir mon CV
               </a>
           </div>
