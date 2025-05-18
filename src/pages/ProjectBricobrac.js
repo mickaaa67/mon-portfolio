@@ -57,7 +57,7 @@ function ProjectBricoBrac() {
 
         <section className="site-architecture centered-section">
           <h2 className="section-title">Aperçu du Modèle Conceptuel des Données</h2>
-          <img src="/imagesProjet/CaptureBricobrac4.png" alt="Arborescence du site Brico'Brac" className="site-map-image centered-image" />
+          <img src="/imagesProjet/CaptureBricobrac4.PNG" alt="Arborescence du site Brico'Brac" className="site-map-image centered-image" />
           <br></br>
           <p>
             La base de données structure les <strong>articles</strong>, les <strong>clients</strong> (avec leurs rôles) et leurs <strong>commandes</strong>. Les <strong>paniers</strong> des clients mènent à la création de <strong>commandes</strong>. Des <strong>utilisateurs</strong> (clients, gestionnaires, administrateurs) interagissent avec le système, et leurs actions sont suivies via des <strong>logs</strong>.
