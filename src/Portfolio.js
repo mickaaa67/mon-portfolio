@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Site e-commerce pour l'ONF",
     description:
-      "Site de vente de vêtements et d'équipements de protection individuelle.",
+      "Site de vente de vêtements et d'équipements de protection individuelle (EPI).",
     technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap", "GitHub"],
     year: "2023",
     image: "/imagesProjet/logo_ONF.png",
@@ -30,7 +30,7 @@ const projects = [
   {
     title: "Ecolotri",
     description:
-      "Site web pour la gestion et le suivi de pesée des déchets collectés.",
+      "Site web pour la gestion et le suivi des pesées de déchets collectés",
     technologies: ["HTML", "CSS", "PHP", "MySQL", "GitHub"],
     year: "2023",
     image: "/imagesProjet/logoEcolotri.jpg",
@@ -143,7 +143,7 @@ export default function Portfolio() {
           <h2 class="text-4xl sm:text-6xl text-start font-bold pb-4">Présentation 👨🏻‍💻</h2>
           <br></br>
             <p>
-              Jeune développeur de 21 ans, passionné par le développement web, Titulaire d'un BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers qui m'a permis de structuré mes compétences.<br></br><br></br> Fort de plusieurs réalisations qui témoignent de ma motivation, je recherche activement un poste de développeur web en alternance pour octobre 2025 et pour une durée de 1 an, dans le cadre de ma préparation à la Licence professionnelle Développement Web Communication et Apprentissages.
+              Jeune développeur de 22 ans, passionné par le développement web, titulaire d'un BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers qui m'a permis de structuré mes compétences.<br></br><br></br> Fort de plusieurs réalisations qui témoignent de ma motivation, je recherche activement un poste de développeur web en alternance pour octobre 2025 et pour une durée de 1 an, dans le cadre de ma préparation à la Licence professionnelle Développement Web Communication et Apprentissages.
             </p>
             <br></br>
               <a href="https://drive.google.com/file/d/1CCWlH_0rMgtzOo7kwbWNHDxoHhtoUvlX/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="button">
@@ -156,7 +156,7 @@ export default function Portfolio() {
         </section >
         <br id="parcours-pro"></br><br></br><br></br>
         <section  className="parcours-pro-section">
-          <h2>Mon Parcours Professionnel en Informatique 💻 </h2>
+          <h2>Mon parcours professionnel en informatique 💻 </h2>
           <div className="timeline-container">
             <div className="timeline-column experiences">
               <h3>Expériences Professionnelles</h3>
@@ -173,7 +173,7 @@ export default function Portfolio() {
               <div className="timeline-item">
                 <div className="timeline-point"></div>
                 <div className="timeline-date">février 2023 - avril 2023</div>
-                <div className="timeline-content">Stage en Informatique (deuxième période)<br></br>L'ONF - Gestion forestière, Colmar
+                <div className="timeline-content">Stage en Informatique (deuxième période)<br></br>L'ONF - Gestion des forêts, Colmar
                   <br />
                 </div>
               </div>
@@ -192,16 +192,16 @@ export default function Portfolio() {
                 <div className="timeline-point"></div>
                 <div className="timeline-date">septembre 2023 - juillet 2024</div>
                 <div className="timeline-content">
-                  Brevet de Technicien Supérieur Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers en alternance.
+                  Brevet de Technicien Supérieur Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers en Alternance.
                   <br />
-                  IRIS, Strasbourg
+                  IRIS MediaSchool, Strasbourg
                 </div>
               </div>
               <div className="timeline-item formation-item">
                 <div className="timeline-point"></div>
                 <div className="timeline-date">septembre 2021 - juillet 2023</div>
                 <div className="timeline-content">
-                  Brevet de Technicien Supérieur Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers en initial.
+                  Brevet de Technicien Supérieur Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers en Initial.
                   <br />
                   Lycée Camille Sée, Colmar
                 </div>
@@ -218,109 +218,150 @@ export default function Portfolio() {
         <section className="section">
           <h2> Mes compétences</h2>
           <br />
+          <p class="instruction-text">* Passez la souris sur chaque compétence pour en découvrir les détails et mon niveau de maîtrise *</p>
+          <br></br>
           <div className="skills-container">
-            <div className="skill-group">
-              <h3>Front-end</h3>
-              <div className="skill-list">
-                <div className="skill-item-large">
-                  <img src="/images/html.png" alt="HTML" className="skill-icon-large" />
-                  <span>HTML</span>
+            <div className="skill-list">
+              {[
+                { name: "HTML", icon: "/images/html.png", level: "Solide expertise dans la structuration sémantique de contenu web et la création de pages performantes. Utilisé comme base pour tous mes projets, garantissant une compatibilité cross-navigateur et une accessibilité optimale. ⭐⭐⭐⭐" },
+                { name: "CSS", icon: "/images/css.png", level: "Connaissances approfondies en stylisation web, avec une maîtrise des techniques de responsive design (Media Queries, Flexbox, Grid) pour une adaptation parfaite sur tous les appareils. Usage régulier pour la création d'interfaces utilisateur esthétiques et fonctionnelles. ⭐⭐⭐⭐" },
+                { name: "Bootstrap", icon: "/images/Bootstrap.png", level: "Bases solides de ce framework CSS pour le développement rapide d'interfaces web responsives et modernes. Utilisé sur plusieurs projets personnels pour accélérer le prototypage et l'intégration visuelle. ⭐⭐⭐" },
+                { name: "JavaScript", icon: "/images/javascript.png", level: "Bases solides acquises en programmation côté client, essentielles pour rendre les interfaces web interactives et dynamiques. Actuellement en cours d'approfondissement via des projets personnels et l'exploration de nouvelles fonctionnalités du langage. ⭐⭐⭐" }
+              ].map((skill, index) => (
+                <div className="skill-item-large tooltip-wrapper" key={index}>
+                  <img src={skill.icon} alt={skill.name} className="skill-icon-large" />
+                  <span>{skill.name}</span>
+                  <div className="tooltip">
+                    <span className="tooltip-text">
+                      {skill.level.replace(/ ⭐+$/, '')}
+                    </span>
+                    <div className="tooltip-stars">
+                      {skill.level.match(/⭐+/)}
+                    </div>
+                  </div>
                 </div>
-                <div className="skill-item-large">
-                  <img src="/images/css.png" alt="CSS" className="skill-icon-large" />
-                  <span>CSS</span>
-                </div>
-                <div className="skill-item-large">
-                  <img src="/images/javascript.png" alt="JavaScript" className="skill-icon-large" />
-                  <span>JavaScript</span>
-                </div>
-                <div className="skill-item-large">
-                  <img src="/images/react.png" alt="ReactJS" className="skill-icon-large" />
-                  <span>ReactJS</span>
-                </div>
-              </div>
+              ))}
             </div>
             <div className="skill-group">
               <h3>Back-end</h3>
               <div className="skill-list">
-                <div className="skill-item-large">
-                  <img src="/images/php.png" alt="PHP" className="skill-icon-large" />
-                  <span>PHP</span>
+                {[
+                  { name: "PHP", icon: "/images/php.png", level: "Bases solides en développement back-end, mises en pratique en autonomie et lors de mon stage à l'ONF. ⭐⭐⭐" },
+                  { name: "SQL", icon: "/images/sql.png", level: "Maîtrise confirmée des requêtes SQL et de la gestion de bases de données relationnelles, appliquée dans la majorité de mes projets. ⭐⭐⭐⭐" },
+                  { name: "C#", icon: "/images/csharp.png", level: "Bases acquises en programmation orientée objet, explorées lors de cours et de travaux pratiques. ⭐⭐⭐" },
+                  { name: "Java", icon: "/images/java.png", level: "Maîtrise des bases, principalement acquise en environnement académique. ⭐⭐⭐" },
+                  { name: "Python", icon: "/images/python.png", level: "Maîtrise des bases, avec un focus sur l'algorithmie, acquise en BTS et approfondie en autodidact.  ⭐⭐⭐" },
+                  { name: "Node.js", icon: "/images/nodeJS.png", level: "Bonnes bases pour le développement back-end JavaScript, en cours d'approfondissement en autodidacte. ⭐⭐⭐" }
+                ].map((skill, index) => (
+                <div className="skill-item-large tooltip-wrapper" key={index}>
+                  <img src={skill.icon} alt={skill.name} className="skill-icon-large" />
+                  <span>{skill.name}</span>
+                  <div className="tooltip">
+                    <span className="tooltip-text">
+                      {skill.level.replace(/ ⭐+$/, '')}
+                    </span>
+                    <div className="tooltip-stars">
+                      {skill.level.match(/⭐+/)}
+                    </div>
+                  </div>
                 </div>
-                <div className="skill-item-large">
-                  <img src="/images/sql.png" alt="SQL" className="skill-icon-large" />
-                  <span>SQL</span>
+              ))}
+              </div>
+            </div>
+            <div className="skill-group">
+              <h3>Framework</h3>
+              <div className="skill-list">
+                {[
+                  { name: ".NET", icon: "/images/NET.png", level: "Bonne maîtrise - appliquée concrètement durant mon alternance chez Jung Logistique. ⭐⭐⭐⭐" },
+                  { name: "Laravel", icon: "/images/Laravel.png", level: "Utilisé activement durant mon alternance pour le développement back-end d'une application de gestion de stock. ⭐⭐⭐" },
+                  { name: "ReactJS", icon: "/images/react.png", level: "Bonne maîtrise pour la création d'interfaces utilisateur modernes et interactives, approfondie en autodidact et l'application sur plusieurs projets personnels.  ⭐⭐⭐⭐" },
+                  { name: "Symfony", icon: "/images/Symfony.png", level: "Maîtrise des bases du framework PHP pour le développement web structuré. Compétence acquise en autodidacte et actuellement mise en pratique sur un projet personnel de plateforme de publication de contenu. ⭐⭐⭐" }
+                ].map((skill, index) => (
+                <div className="skill-item-large tooltip-wrapper" key={index}>
+                  <img src={skill.icon} alt={skill.name} className="skill-icon-large" />
+                  <span>{skill.name}</span>
+                  <div className="tooltip">
+                    <span className="tooltip-text">
+                      {skill.level.replace(/ ⭐+$/, '')}
+                    </span>
+                    <div className="tooltip-stars">
+                      {skill.level.match(/⭐+/)}
+                    </div>
+                  </div>
                 </div>
-                <div className="skill-item-large">
-                  <img src="/images/csharp.png" alt="C#" className="skill-icon-large" />
-                  <span>C#</span>
-                </div>
-                <div className="skill-item-large">
-                  <img src="/images/java.png" alt="Java" className="skill-icon-large" />
-                  <span>Java</span>
-                </div>
-                <div className="skill-item-large">
-                  <img src="/images/python.png" alt="Python" className="skill-icon-large" />
-                  <span>Python</span>
-                </div>
+              ))}
               </div>
             </div>
             <div className="skill-group">
               <h3>Outils & Environnement</h3>
               <div className="skill-list">
-                <div className="skill-item-large">
-                  <img src="/images/vscode.png" alt="VS Code" className="skill-icon-large" />
-                  <span>VS Code</span>
+                {[
+                  { name: "VS Code", icon: "/images/vscode.png", level: "Très bonne maîtrise  indispensable pour le développement de tous mes projets personnels et professionnels, grâce à ses nombreuses extensions et son environnement personnalisable. ⭐⭐⭐⭐" },
+                  { name: "Microsoft SQL Server", icon: "/images/SqlServer.png", level: "Bonne maîtrise de ce système de gestion de base de données relationnelles, utilisé activement durant mon alternance chez Jung Logistique pour la création et l'optimisation de requêtes visant à faciliter et fluidifier la recherche et l'obtention de résultats. ⭐⭐⭐⭐" },
+                  { name: "Canva", icon: "/images/canva.png", level: "Très bonne maitrise, utilisé régulièrement pour la création de supports visuels (logos, infographies) et la mise en forme de documents professionnels (CV, lettres de motivation). ⭐⭐⭐⭐" },
+                  { name: "Git", icon: "/images/git.png", level: "Maîtrise des fondamentaux du contrôle de version distribué, essentiel pour la gestion de l'historique et la collaboration sur le code de mes projets. ⭐⭐⭐" },
+                  { name: "GitHub", icon: "/images/github.png", level: "Bonne maîtrise de cette plateforme de collaboration et d'hébergement de code, utilisée quotidiennement pour le versioning de mes projets personnels, ainsi que de manière intensive durant mon stage à l'ONF et mon alternance chez Jung Logistique. ⭐⭐⭐⭐" },
+                  { name: "Docker", icon: "/images/docker.png", level: "Compétence en conteneurisation, appliquée pour l'hébergement du site développé durant mon stage à l'ONF sur un environnement OVH. J'ai exploré son rôle dans la simplification du déploiement. ⭐⭐" },
+                  { name: "Jira", icon: "/images/Jira.png", level: "Assez bonne maîtrise de cet outil de gestion de projet agile, acquis par autoformation. Je l'utilise pour le suivi des tâches, la planification des sprints et l'organisation de mes projets personnels. ⭐⭐⭐" },
+                  { name: "Trello", icon: "/images/trello.png", level: "Assez bonne maîtrise de Trello pour la gestion visuelle de projets et le suivi des workflows, utilisé activement sur mes projets BricoBrac et Formatech. ⭐⭐⭐" },
+                  { name: "Yarn", icon: "/images/yarn.png", level: "Assez bonne maîtrise de ce gestionnaire de paquets JavaScript pour la gestion des dépendances et l'optimisation des performances des projets front-end, acquise en autodidacte. ⭐⭐⭐" },
+                  { name: "npm", icon: "/images/npm.png", level: "Assez bonne maîtrise de ce gestionnaire de paquets JavaScript, essentiel pour l'installation et la gestion des librairies dans mes projets de développement web, acquise en autodidacte. ⭐⭐⭐" }
+                ].map((skill, index) => (
+                <div className="skill-item-large tooltip-wrapper" key={index}>
+                  <img src={skill.icon} alt={skill.name} className="skill-icon-large" />
+                  <span>{skill.name}</span>
+                  <div className="tooltip">
+                    <span className="tooltip-text">
+                      {skill.level.replace(/ ⭐+$/, '')}
+                    </span>
+                    <div className="tooltip-stars">
+                      {skill.level.match(/⭐+/)}
+                    </div>
+                  </div>
                 </div>
-                <div className="skill-item-large">
-                  <img src="/images/canva.png" alt="Canva" className="skill-icon-large" />
-                  <span>Canva</span>
-                </div>
-                <div className="skill-item-large">
-                  <img src="/images/git.png" alt="Git" className="skill-icon-large" />
-                  <span>Git</span>
-                </div>
-                <div className="skill-item-large">
-                  <img src="/images/github.png" alt="GitHub" className="skill-icon-large" />
-                  <span>GitHub</span>
-                </div>
-                <div className="skill-item-large">
-                  <img src="/images/docker.png" alt="Docker" className="skill-icon-large" />
-                  <span>Docker</span>
-                </div>
+              ))}
               </div>
             </div>
             <div className="skill-group">
-              <h3>CMS</h3>
+              <h3>CMS (Système de gestion de contenu)</h3>
               <div className="skill-list">
-                <div className="skill-item-large">
-                  <img src="/images/wordpress.png" alt="Wordpress" className="skill-icon-large" />
-                  <span>Wordpress</span>
+                {[
+                  { name: "Wordpress", icon: "/images/wordpress.png", level: "Maîtrise assez bonne, utilisé pour la création de sites web vitrines et le développement personnalisé de thèmes/plugins. Utilisé en cours pour une page de location de bateau. ⭐⭐⭐" },
+                  { name: "Prestashop", icon: "/images/prestashop.png", level: "Compétence sur cette plateforme e-commerce open-source, mise en pratique sur un projet personnel de pour la vente de matériel électronique reconditionné avec un amis. J'ai exploré la gestion du catalogue produit, ainsi que les modules de paiement. ⭐⭐⭐" },
+                  { name: "Shopify", icon: "/images/shopify.png", level: "Familiarité avec cette plateforme e-commerce, utilisée pour un projet personnel axé sur la création rapide de boutiques en ligne pour le dropshipping. J'ai appris à configurer une boutique, gérer les produits et les thèmes. ⭐⭐⭐" }
+                ].map((skill, index) => (
+                <div className="skill-item-large tooltip-wrapper" key={index}>
+                  <img src={skill.icon} alt={skill.name} className="skill-icon-large" />
+                  <span>{skill.name}</span>
+                  <div className="tooltip">
+                    <span className="tooltip-text">
+                      {skill.level.replace(/ ⭐+$/, '')}
+                    </span>
+                    <div className="tooltip-stars">
+                      {skill.level.match(/⭐+/)}
+                    </div>
+                  </div>
                 </div>
-                <div className="skill-item-large">
-                  <img src="/images/prestashop.png" alt="Prestashop" className="skill-icon-large" />
-                  <span>Prestashop</span>
-                </div>
-                <div className="skill-item-large">
-                  <img src="/images/shopify.png" alt="Shopify" className="skill-icon-large" />
-                  <span>Shopify</span>
-                </div>
+              ))}
               </div>
             </div>
           </div>
         </section>
         <br id="projects"></br><br></br><br></br>
         <section className="section">
-          <h2>Mes projets</h2>
+          <h2>Mes projets </h2>
           <br></br>
           <div className="grid">
             {projects.map((project, index) => (
               <div className="card" key={index}>
                 <img src={project.image} alt={project.title} />
                 <h2 className="text-xl">{project.title}</h2>
-                <p className="mt-2">{project.description}</p>
+                <br></br>
+                <p className="mt-2"><strong>Description :</strong> {project.description}</p>
+                <br></br>
                 <p className="text-sm mt-2"><strong>Technologies :</strong> {project.technologies.join(", ")}</p>
-                <p className="text-sm text-gray-400">{project.year}</p>
+                <br></br>
+                <p className="text-sm text-gray-400"><strong>Année :</strong> {project.year}</p>
                 <Link to={project.link} className="button">Voir plus</Link>
               </div>
             ))}
@@ -328,7 +369,7 @@ export default function Portfolio() {
         </section>
         <br></br><br></br><br></br><br></br><br></br><br></br>
         <section id="contact" className="section">
-          <h2>Contactez-moi ! ✉️</h2>
+          <h2>Formulaire de contact ✉️</h2>
           <p>N'hésitez pas à me contacter directement par email.</p>
           <div className="contact-form">
             <form onSubmit={handleSubmit}> {/* onSubmit lié à la fonction handleSubmit */}

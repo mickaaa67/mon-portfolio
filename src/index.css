@@ -1012,6 +1012,117 @@ a:hover {
   color: #1e90ff;
 }
 
+.skill-item-large {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre l'icône */
+  justify-content: center;
+  padding: 10px;
+  /* Pour gérer l'espacement entre les éléments de la grille si c'est le cas */
+  margin: 0 5px; /* Ajoute un peu d'espace horizontal */
+}
+
+.skill-icon-large {
+  width: 70px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.instruction-text {
+  font-size: 0.95rem; /* Légèrement plus petit que le texte normal */
+  color: #888; /* Couleur plus douce, gris par exemple */
+  text-align: center; /* Centre le texte */
+  margin-top: 10px; /* Espace au-dessus */
+  margin-bottom: 20px; /* Espace en dessous avant la liste des compétences */
+}
+
+.tooltip-wrapper {
+  position: relative;
+  /* Assurez-vous que le wrapper est assez grand pour contenir le tooltip */
+  /* Si le tooltip est positionné par rapport à l'icône, pas besoin d'une grande taille pour le wrapper */
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 120%; /* ajuste selon ta mise en page */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #01071b;
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  width: 400px; /* largeur fixe plus grande */
+  max-width: 90vw;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.4;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  z-index: 10;
+  white-space: normal;
+  word-wrap: break-word;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+/* Style pour le contenu interne du tooltip */
+.tooltip .skill-description {
+  margin-bottom: 5px; /* Espace entre le texte et les étoiles */
+}
+
+.tooltip .skill-level {
+  font-size: 0.9rem; /* Taille un peu plus grande pour les étoiles */
+  white-space: nowrap; /* Empêche les étoiles de passer à la ligne si elles sont une chaîne continue */
+}
+
+
+.tooltip-wrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Pour gérer la flèche du tooltip (optionnel) */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* Positionne la flèche en bas du tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent; /* Couleur de la flèche */
+}
+
+.tooltip-stars {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1rem; /* adapte selon ton style */
+  display: flex;
+  justify-content: center;
+}
+
+/* Animation du contenu du tooltip au survol */
+.tooltip-wrapper:hover .tooltip {
+  animation: tooltipGrow 950ms ease-out;
+}
+
+@keyframes tooltipGrow {
+  0% {
+    transform: translateX(-50%) scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+
 
 
 

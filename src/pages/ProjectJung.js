@@ -39,7 +39,7 @@ function ProjectJung() {
           <h2 className="section-title">Présentation des expériences chez Jung Logistique</h2>
           <br></br>
           <p>
-            Durant mon année d'alternance chez Jung Logistique, j'ai été activement impliqué dans la modernisation et l'optimisation de plusieurs aspects de leur portail web dédié à la gestion logistique. Ce projet a permis d'appliquer mes compétences techniques dans un environnement professionnel concret.
+            Durant mon année d'alternance chez Jung Logistique, j'ai été activement impliqué dans la modernisation et l'optimisation de plusieurs aspects de leur portail web dédié à la gestion logistique. Ce projet a permis d'appliquer mes compétences et connaissances techniques dans un environnement professionnel concret.
           </p>
           <br></br><br></br>
           <h3>Mes principales réalisations :</h3>
@@ -73,7 +73,7 @@ function ProjectJung() {
             </p>
             <br></br>
             <p>
-              Le tableau affiché présente différentes informations clés telles que la référence de la réception, l'année du code, le fournisseur, le propriétaire, le motif, l'article, le lot, le nombre de palettes et la somme en valeur logistique (VL).
+              Le tableau affiché ci-dessous présente différentes informations clés telles que la référence de la réception, l'année du code, le fournisseur, le propriétaire, le motif, l'article, le lot, le nombre de palettes et la somme en valeur logistique (VL).
 
               Une fonctionnalité importante de cette vue est la possibilité pour l'utilisateur de télécharger ces données sous forme de fichier Excel (.xlsx) ou CSV (.csv) pour une analyse ou un traitement ultérieur.
             </p>
@@ -119,7 +119,7 @@ function ProjectJung() {
             <ul className='indent-list'>
               <li><strong>Entre deux dates de création de préparation : </strong> Permet de filtrer les statistiques en fonction de la période durant laquelle les préparations ont été créées.</li>
               <br></br>
-              <li><strong>Entre deux dates de validation de préparation : </strong> Affiche les statistiques des préparations validées sur une plage de dates spécifique.</li>
+              <li><strong>Entre deux dates de validation de préparation : </strong> Affiche les statistiques des préparations validées sur une plage de dates spécifiques.</li>
               <br></br>
               <li><strong>Entre deux dates de validation de chargement : </strong> Restreint les résultats aux préparations dont le chargement a été validé entre deux dates données.</li>
               <br></br>
@@ -216,7 +216,7 @@ function ProjectJung() {
           </div>
           <br></br><br></br><br></br>
           <div className="subsection">
-            <h3 className="subsection-title">Automatisation des Mails aux Transporteurs</h3>
+            <h3 className="subsection-title">Automatisation des Mails aux Transporteur(s)</h3>
             <p className="subsection-description">
             <br></br>
               Dans le cadre de mes responsabilités, j'ai conçu et développé une fonctionnalité visant à optimiser la communication avec les transporteurs. Cette interface permet de visualiser l'ensemble des chargements disponibles sous forme de liste. L'utilisateur peut y sélectionner un ou plusieurs transporteurs, ainsi que les chargements correspondants, puis initier l’envoi automatique d’un e-mail.
@@ -230,7 +230,11 @@ function ProjectJung() {
             <h1 className="section-title">Bilan de l’expérience</h1>
             <br></br>
             <p>
-              Cette expérience a été particulièrement enrichissante, tant sur le plan technique que humain. Elle m’a permis de confirmer mon intérêt profond, voire ma passion, pour le développement web. Travailler au sein d'une équipe projet de plus grande envergure que celle de l’ONF m’a offert l’opportunité de découvrir de nouvelles méthodes de collaboration, d'approfondir ma maîtrise des outils de versioning, notamment Git, et de monter en compétences dans un environnement structuré et stimulant. Ce projet a renforcé ma motivation à poursuivre dans cette voie et à continuer à me perfectionner dans le domaine du développement.
+              Cette expérience a été particulièrement enrichissante, tant sur le plan technique que sur le plan humain. Elle m’a permis de confirmer mon intérêt profond, voire ma passion pour le développement web. Travailler au sein d'une équipe projet de plus grande envergure que celle de l’ONF m’a offert l’opportunité de découvrir de nouvelles méthodes de collaboration, notamment en méthodologie agile, d’approfondir ma maîtrise des outils de versioning, en particulier Git, ainsi que d'acquérir de bonnes pratiques en gestion de branches, en revue de code et en intégration continue.
+              <br></br><br></br>
+              J’ai également consolidé mes compétences en développement back-end avec PHP et MySQL, tout en améliorant mes capacités en front-end (HTML, CSS, JavaScript) grâce à un travail en étroite collaboration avec les équipes de design. Cette immersion dans un environnement structuré et stimulant m’a permis de mieux comprendre les enjeux de maintenabilité, de performance et de sécurité dans le développement d’applications web.
+              <br></br><br></br>
+              Ce projet a renforcé ma motivation à poursuivre dans cette voie et à continuer à me perfectionner dans le développement web full-stack, en élargissant mes compétences vers des frameworks modernes comme Laravel côté back-end ou React côté front-end, ainsi qu’en approfondissant mes connaissances en architecture logicielle, en tests automatisés et en déploiement continu.
             </p>
           </div>
 

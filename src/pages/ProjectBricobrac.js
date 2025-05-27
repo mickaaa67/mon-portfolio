@@ -27,7 +27,7 @@ function ProjectBricoBrac() {
               <Link to="/#projects" className="back-button">
                 <FaArrowLeft />
               </Link>
-              <h1 className="project-title">Projet Brico'Brac - Site de Vente en Ligne</h1>
+              <h1 className="project-title">Projet BricoBrac - Site de Vente en Ligne</h1>
             </div>
             <img
               src="/imagesProjet/logoBricoBrac.png"
@@ -67,7 +67,7 @@ function ProjectBricoBrac() {
           <h2 className="section-title">Aperçu du site</h2>
           <br></br>
           <p>
-            Pour avoir un aperçu visuel des différentes pages et fonctionnalités du site, veuillez consulter la vidéo de présentation ci-dessous.
+            Pour un aperçu visuel des différentes pages et fonctionnalités du site, veuillez consulter la vidéo de présentation ci-dessous..
           </p>
           <br></br>
           <div className="video-container centered-element">

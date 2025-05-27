@@ -42,7 +42,7 @@ function ProjectONF() {
           <h3>Mes contributions au projet :</h3>
           <br></br>
           <p>
-            Au sein d'une équipe de quatre développeurs, j'ai activement participé à toutes les phases de ce projet. Mes principales responsabilités et contributions ont inclus :
+            Au sein d'une équipe de quatre développeurs, j'ai activement participé à toutes les phases de ce projet. Mes principales responsabilités et contributions étaient les suivantes :
           </p>
           <br></br>
           <ul className="indent-list">
@@ -57,7 +57,7 @@ function ProjectONF() {
           </ul>
           <br></br><br></br>
           <p>
-            Ce projet a permis de mettre en pratique mes compétences en développement web dans un contexte réel et collaboratif, en utilisant des technologies courantes et des outils de gestion de projet efficaces.
+            Ce projet a permis de mettre en pratique mes compétences et mes connaissances en développement web dans un contexte réel et collaboratif, en utilisant des technologies courantes et des outils de gestion de projet efficaces.
           </p>
         </section>
 
@@ -67,8 +67,7 @@ function ProjectONF() {
           <img src="/imagesProjet/mcd onf.png" alt="Modèle Conceptuel de Données du projet ONF" className="site-map-imageONF centered-image" />
           <br></br>
           <p>
-              Ce Modèle Conceptuel de Données (MCD) illustre l'organisation des informations pour le projet ONF. Il met en évidence les entités principales telles que les Utilisateurs (ouvriers) qui créent des Commandes d'EPI (Équipements de Protection Individuelle) et de Vêtements. Les Produits, fournis par des Fournisseurs, sont catégorisés et disponibles en différentes Tailles. Les Lieux de Livraison sont associés aux Utilisateurs. Des tables de liaison comme LigneCommandeEPI et LigneCommandeVet détaillent le contenu de chaque commande. Le MCD prend également en compte les Métiers des utilisateurs, les Statuts des commandes, les Types de Produits, et la Disponibilité des produits en fonction des tailles.
-          </p>
+              Ce Modèle Conceptuel de Données (MCD) illustre l’organisation des informations pour le projet ONF. Il met en évidence les entités principales, telles que les Utilisateurs (Ouvriers) qui créent des Commandes d’EPI (Équipements de Protection Individuelle) et de Vêtements. Les Produits, fournis par des Fournisseurs, sont classés par Catégories et disponibles en différentes Tailles. Les Lieux de Livraison sont associés aux Utilisateurs. Des tables de liaison, comme <strong>LigneCommandeEPI</strong> et <strong>LigneCommandeVet</strong>, détaillent le contenu de chaque commande. Le MCD prend également en compte les Métiers des utilisateurs, les Statuts des commandes, les Types de produits, ainsi que la Disponibilité des produits en fonction des tailles.</p>
         </section>    
 
         <section className="project-preview centered-section">
@@ -84,9 +83,12 @@ function ProjectONF() {
           <h1 className="section-title">Bilan de l’expérience</h1>
             <br></br>
             <p>
-              Ce projet, mené en totale autonomie, a été l’occasion de consolider mon expertise technique tout en développant mes aptitudes en gestion de projet. Travailler seul sur l’ensemble de la plateforme m’a permis de prendre des décisions architecturales, de piloter la conception de l’interface utilisateur, puis d’enchaîner sur le développement front‑end (HTML/CSS) et back‑end (PHP/MySQL) sans dépendre d’un référent technique. J’ai également animé régulièrement des réunions d’avancement avec les parties prenantes : ces points hebdomadaires m’ont donné l’occasion de présenter les nouvelles fonctionnalités, de recueillir des retours et d’ajuster rapidement le planning.
-            <br></br><br></br>
-              Enfin, piloter ces réunions de suivi et coordonner la communication entre les utilisateurs finaux et l’équipe IT a été une expérience particulièrement enrichissante, qui m’a conforté dans mon choix de carrière et m’incite à relever de nouveaux défis d’envergure.            </p>
+              Ce projet, mené en totale autonomie, a été l’occasion de consolider mon expertise technique en développement web, notamment sur les aspects liés à la conception d’architectures logicielles, à l’intégration front‑end (HTML/CSS) et au développement back‑end (PHP/MySQL). Travailler seul sur l’ensemble de la plateforme m’a permis de prendre des décisions structurantes, de concevoir l’interface utilisateur, puis d’assurer son implémentation sans dépendre d’un référent technique.
+              <br></br><br></br>
+              J’ai également animé régulièrement des réunions d’avancement avec les parties prenantes : ces points hebdomadaires m’ont permis de présenter les nouvelles fonctionnalités, de recueillir des retours constructifs, et d’ajuster rapidement le planning.
+              <br></br><br></br>
+              Enfin, piloter ces réunions de suivi et assurer la communication entre les utilisateurs finaux et l’équipe informatique (IT – Technologies de l'Information) a été une expérience particulièrement enrichissante. Elle m’a conforté dans mon projet professionnel : évoluer dans un rôle de développeur web full‑stack impliqué dans toutes les phases d’un projet, de la conception à la mise en production, tout en continuant à relever des défis techniques et organisationnels de plus grande ampleur.
+            </p>
         </section>
       </div>
       <br></br><br></br><br></br><br></br>

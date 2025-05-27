@@ -36,7 +36,7 @@ function ProjectFormaTech() {
         <section className="project-presentation">
           <h2 className="section-title">Présentation du projet</h2>
           <p>
-            Le projet FormaTech est une application web conçue pour la gestion complète des formations, des modules et des cours au sein d'un organisme de formation. L'objectif principal était de simplifier et d'optimiser l'administration des différents aspects liés aux formations.
+            Le projet FormaTech est un site web conçu pour la gestion complète des formations, des modules et des cours au sein d'un organisme de formation. L'objectif principal était de simplifier et d'optimiser l'administration des différents aspects liés aux formations.
           </p>
           <br></br>
           <h3>Mes contributions au projet :</h3>
@@ -70,7 +70,7 @@ function ProjectFormaTech() {
         <section className="project-preview centered-section">
           <h2 className="section-title">Aperçu de l'application</h2>
           <p>
-          Pour avoir un aperçu visuel des différentes fonctionnalités de gestion que j'ai contribué à établir au sein de l'application web FormaTech, veuillez consulter la vidéo de présentation ci-dessous.
+            Pour un aperçu visuel des différentes fonctionnalités de gestion auxquelles j'ai contribué au sein de l'application web FormaTech, veuillez consulter la vidéo de présentation ci-dessous.          
           </p>
           <div className="video-container centered-element">
             <video src="/videosProjet/captureFormaTech.mp4" controls width="640" height="360">
