@@ -327,7 +327,6 @@ export default function Portfolio() {
               <div className="skill-list">
                 {[
                   { name: "Wordpress", icon: "/images/wordpress.png", level: "Maîtrise assez bonne, utilisé pour la création de sites web vitrines et le développement personnalisé de thèmes/plugins. Utilisé en cours pour une page de location de bateau. ⭐⭐⭐" },
-                  { name: "Prestashop", icon: "/images/prestashop.png", level: "Compétence sur cette plateforme e-commerce open-source, mise en pratique sur un projet personnel de pour la vente de matériel électronique reconditionné avec un amis. J'ai exploré la gestion du catalogue produit, ainsi que les modules de paiement. ⭐⭐⭐" },
                   { name: "Shopify", icon: "/images/shopify.png", level: "Familiarité avec cette plateforme e-commerce, utilisée pour un projet personnel axé sur la création rapide de boutiques en ligne pour le dropshipping. J'ai appris à configurer une boutique, gérer les produits et les thèmes. ⭐⭐⭐" }
                 ].map((skill, index) => (
                 <div className="skill-item-large tooltip-wrapper" key={index}>
