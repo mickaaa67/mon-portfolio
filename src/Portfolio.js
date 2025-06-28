@@ -272,10 +272,10 @@ export default function Portfolio() {
               <h3>Framework</h3>
               <div className="skill-list">
                 {[
-                  { name: ".NET", icon: "/images/NET.png", level: "Bonne maîtrise - appliquée concrètement durant mon alternance chez Jung Logistique. ⭐⭐⭐⭐" },
-                  { name: "Laravel", icon: "/images/Laravel.png", level: "Utilisé activement durant mon alternance pour le développement back-end d'une application de gestion de stock. ⭐⭐⭐" },
-                  { name: "ReactJS", icon: "/images/react.png", level: "Bonne maîtrise pour la création d'interfaces utilisateur modernes et interactives, approfondie en autodidact et l'application sur plusieurs projets personnels.  ⭐⭐⭐⭐" },
-                  { name: "Symfony", icon: "/images/Symfony.png", level: "Maîtrise des bases du framework PHP pour le développement web structuré. Compétence acquise en autodidacte et actuellement mise en pratique sur un projet personnel de plateforme de publication de contenu. ⭐⭐⭐" }
+                  { name: ".NET", icon: "/images/NET.png", level: "Bonne maîtrise - appliquée concrètement durant mon alternance chez Jung Logistique. ⭐⭐⭐" },
+                  { name: "Laravel", icon: "/images/Laravel.png", level: "Utilisé activement durant mon alternance pour le développement back-end d'une application de gestion de stock. ⭐⭐" },
+                  { name: "ReactJS", icon: "/images/react.png", level: "Bonne maîtrise pour la création d'interfaces utilisateur modernes et interactives, approfondie en autodidact et l'application sur plusieurs projets personnels.  ⭐⭐⭐" },
+                  { name: "Symfony", icon: "/images/Symfony.png", level: "Maîtrise des bases du framework PHP pour le développement web structuré. Compétence acquise en autodidacte et actuellement mise en pratique sur un projet personnel de plateforme de publication de contenu. ⭐⭐" }
                 ].map((skill, index) => (
                 <div className="skill-item-large tooltip-wrapper" key={index}>
                   <img src={skill.icon} alt={skill.name} className="skill-icon-large" />
@@ -304,7 +304,7 @@ export default function Portfolio() {
                   { name: "Docker", icon: "/images/docker.png", level: "Compétence en conteneurisation, appliquée pour l'hébergement du site développé durant mon stage à l'ONF sur un environnement OVH. J'ai exploré son rôle dans la simplification du déploiement. ⭐⭐" },
                   { name: "Jira", icon: "/images/Jira.png", level: "Assez bonne maîtrise de cet outil de gestion de projet agile, acquis par autoformation. Je l'utilise pour le suivi des tâches, la planification des sprints et l'organisation de mes projets personnels. ⭐⭐⭐" },
                   { name: "Trello", icon: "/images/trello.png", level: "Assez bonne maîtrise de Trello pour la gestion visuelle de projets et le suivi des workflows, utilisé activement sur mes projets BricoBrac et Formatech. ⭐⭐⭐" },
-                  { name: "Yarn", icon: "/images/yarn.png", level: "Assez bonne maîtrise de ce gestionnaire de paquets JavaScript pour la gestion des dépendances et l'optimisation des performances des projets front-end, acquise en autodidacte. ⭐⭐⭐" },
+                  { name: "Yarn", icon: "/images/yarn.png", level: "Maîtrise des bases de ce gestionnaire de paquets JavaScript pour la gestion des dépendances et l'optimisation des performances des projets front-end, acquise en autodidacte. ⭐⭐" },
                   { name: "npm", icon: "/images/npm.png", level: "Assez bonne maîtrise de ce gestionnaire de paquets JavaScript, essentiel pour l'installation et la gestion des librairies dans mes projets de développement web, acquise en autodidacte. ⭐⭐⭐" }
                 ].map((skill, index) => (
                 <div className="skill-item-large tooltip-wrapper" key={index}>
