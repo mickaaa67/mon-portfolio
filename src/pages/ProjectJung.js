@@ -25,7 +25,7 @@ function ProjectJung() {
                 <FaArrowLeft />
               </Link>
               <h1 className="project-title">
-                Alternance - Expériences Professionnelles chez Jung Logistique
+                Alternance - Assistant Projet chez Jung Logistique
               </h1>
             </div>
             <img

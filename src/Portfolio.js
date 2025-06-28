@@ -146,7 +146,7 @@ export default function Portfolio() {
               Jeune développeur de 22 ans, passionné par le développement web, titulaire d'un BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers qui m'a permis de structuré mes compétences.<br></br><br></br> Fort de plusieurs réalisations qui témoignent de ma motivation, je recherche activement un poste de développeur web en alternance pour octobre 2025 et pour une durée de 1 an, dans le cadre de ma préparation à la Licence professionnelle Développement Web Communication et Apprentissages.
             </p>
             <br></br>
-              <a href="https://drive.google.com/file/d/1CCWlH_0rMgtzOo7kwbWNHDxoHhtoUvlX/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="button">
+              <a href="https://drive.google.com/file/d/14htWkDnbJAaNLkZMzOoP7ZeHXmMo2TTW/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="button">
                 Voir mon CV
               </a>
           </div>
@@ -296,7 +296,7 @@ export default function Portfolio() {
               <h3>Outils & Environnement</h3>
               <div className="skill-list">
                 {[
-                  { name: "VS Code", icon: "/images/vscode.png", level: "Très bonne maîtrise  indispensable pour le développement de tous mes projets personnels et professionnels, grâce à ses nombreuses extensions et son environnement personnalisable. ⭐⭐⭐⭐" },
+                  { name: "Visual Studio Code", icon: "/images/vscode.png", level: "Très bonne maîtrise  indispensable pour le développement de tous mes projets personnels et professionnels, grâce à ses nombreuses extensions et son environnement personnalisable. ⭐⭐⭐⭐" },
                   { name: "Microsoft SQL Server", icon: "/images/SqlServer.png", level: "Bonne maîtrise de ce système de gestion de base de données relationnelles, utilisé activement durant mon alternance chez Jung Logistique pour la création et l'optimisation de requêtes visant à faciliter et fluidifier la recherche et l'obtention de résultats. ⭐⭐⭐⭐" },
                   { name: "Canva", icon: "/images/canva.png", level: "Très bonne maitrise, utilisé régulièrement pour la création de supports visuels (logos, infographies) et la mise en forme de documents professionnels (CV, lettres de motivation). ⭐⭐⭐⭐" },
                   { name: "Git", icon: "/images/git.png", level: "Maîtrise des fondamentaux du contrôle de version distribué, essentiel pour la gestion de l'historique et la collaboration sur le code de mes projets. ⭐⭐⭐" },

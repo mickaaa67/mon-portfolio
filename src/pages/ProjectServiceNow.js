@@ -25,7 +25,7 @@ function ProjectServiceNow() {
                 <FaArrowLeft />
               </Link>
               <h1 className="project-title">
-                Stage ServiceNow - Optimisation de la Gestion des Services IT chez Daramic
+                Stage chez Daramic - Optimisation de la Gestion des Services IT
               </h1>
             </div>
             <div className="logos-container">
@@ -102,7 +102,7 @@ function ProjectServiceNow() {
           </p>
           <br></br><br></br>
           <p>
-            J'ai été encadré par Steve Fuchs, et cette expérience chez Daramic m'a permis de comprendre l'importance d'une gestion précise des actifs IT et des outils de supervision comme ServiceNow et SquaredUp dans un environnement industriel.
+            J'ai été encadré par Monsieur Steve Fuchs, et cette expérience chez Daramic m'a permis de comprendre l'importance d'une gestion précise des actifs IT et des outils de supervision comme ServiceNow et SquaredUp dans un environnement industriel.
           </p>
         </section>
       </div>

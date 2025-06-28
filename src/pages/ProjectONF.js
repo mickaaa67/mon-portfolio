@@ -24,7 +24,7 @@ function ProjectONF() {
               <Link to="/#projects" className="back-button">
                 <FaArrowLeft />
               </Link>
-              <h1 className="project-title">Projet ONF - Site de Commande d'Équipements</h1>
+              <h1 className="project-title">Stage à l'ONF - Site de Commande d'Équipements</h1>
             </div>
             <img
               src="/imagesProjet/logoONF.jpg"
@@ -62,12 +62,12 @@ function ProjectONF() {
         </section>
 
         <section className="site-architecture centered-section">
-          <h2 className="section-title">Aperçu du Modèle Conceptuel de Données</h2>
+          <h2 className="section-title">Aperçu du Modèle Conceptuel de Données (MCD)</h2>
           {/* Remplacer cette image par le schéma MCD généré pour le projet ONF */}
           <img src="/imagesProjet/mcd onf.png" alt="Modèle Conceptuel de Données du projet ONF" className="site-map-imageONF centered-image" />
           <br></br>
           <p>
-              Ce Modèle Conceptuel de Données (MCD) illustre l’organisation des informations pour le projet ONF. Il met en évidence les entités principales, telles que les Utilisateurs (Ouvriers) qui créent des Commandes d’EPI (Équipements de Protection Individuelle) et de Vêtements. Les Produits, fournis par des Fournisseurs, sont classés par Catégories et disponibles en différentes Tailles. Les Lieux de Livraison sont associés aux Utilisateurs. Des tables de liaison, comme <strong>LigneCommandeEPI</strong> et <strong>LigneCommandeVet</strong>, détaillent le contenu de chaque commande. Le MCD prend également en compte les Métiers des utilisateurs, les Statuts des commandes, les Types de produits, ainsi que la Disponibilité des produits en fonction des tailles.</p>
+              Ce Modèle Conceptuel de Données illustre l’organisation des informations pour le projet ONF. Il met en évidence les entités principales, telles que les Utilisateurs (Ouvriers) qui créent des Commandes d’EPI (Équipements de Protection Individuelle) et de Vêtements. Les Produits, fournis par des Fournisseurs, sont classés par Catégories et disponibles en différentes Tailles. Les Lieux de Livraison sont associés aux Utilisateurs. Des tables de liaison, comme <strong>LigneCommandeEPI</strong> et <strong>LigneCommandeVet</strong>, détaillent le contenu de chaque commande. Le MCD prend également en compte les Métiers des utilisateurs, les Statuts des commandes, les Types de produits, ainsi que la Disponibilité des produits en fonction des tailles.</p>
         </section>    
 
         <section className="project-preview centered-section">
